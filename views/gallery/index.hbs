@@ -1,0 +1,82 @@
+<section class="intro">
+
+      <header class="gallery-header">
+        <h1>Gallery</h1>
+
+        <a class="discover" href="#gallery">
+          <i class="fa fa-angle-double-down"></i>
+        </a>
+
+      </header>
+
+</section>
+
+    <section class="gallery" id="gallery">
+      <nav class="navbar navbar-default" id="cd-main-nav">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Logo</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-center">
+                <li><a href="/developer">Web Development</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/explore">Blog</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/shopping-cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+                <span class="badge">{{ session.cart.totalQty }}</span>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  {{# if login }}
+                    <li><a href="/users/profile">User Management</a></li>
+                    <li><a href="/users/logout">Log out</a></li>
+                  {{ else }}
+                    <li><a href="/users/signup">Sign Up</a></li>
+                    <li><a href="/users/signin">Log in</a></li>
+                  {{/if}}
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <h1>My Photography</h1>
+    </section>
+
+    <div class="rocky-mtn" id="rocky-mtn">
+      <h1>Rocky Mountains Gallery</h1>
+    </div>
+      <div class="gallery-description">
+        <p>
+          It has been truly an amazing experience to explore the Rocky Mountains. I have come across some of the most beautiful sights that I’ve ever laid my eyes upon. Colorado and Utah are my two favorite States to explore. I plan to travel, camp, and make photographs of this grand landscape.
+        </p>
+        <a href="http://troykaynedesignandphoto.com/rock-mtn-gallery.html" class="smooth-scroll btn btn-light">View Gallery</a>
+      </div>
+
+    <div class="israel" id="israel">
+      <h1>Israel Gallery</h1>
+    </div>
+      <div class="gallery-description">
+        <p>
+          I was fortunate to have had the opportunity to visit Israel during the winter break of 2015. I was part of an outdoor explorers’ group. We visited the diverse and wondrous landscape of The Holy Land.... Please enjoy the visual journey!
+        </p>
+        <a href="http://troykaynedesignandphoto.com/israel-gallery.html" class="smooth-scroll btn btn-light">View Gallery</a>
+      </div>

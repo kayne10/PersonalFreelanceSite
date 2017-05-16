@@ -1,0 +1,31 @@
+<!-- Individual Post View -->
+{{# post}}
+<div class="col-md-6 post-thumbnail">
+  <img src="{{ this.imagePath }}" class="img-responsive" alt="...">
+  <div class="caption">
+    <h3>{{ this.title }}</h3>
+    <p>
+      {{ this.description }}
+    </p>
+    <ul>
+      {{#each comments }}
+      <li class="comment-container">
+        <strong><h6>{{ this.body }}</h6></strong>
+        <h6> Posted by {{ this._userId }}</h6>
+        <h6>{{ this.date }}</h6>
+      </li>
+      {{/each}}
+    </ul>
+    <form class="" action="/explore" method="post">
+      <input type="text" name="" placeholder="Post your comments here" value="">
+      <button type="button" name="button">Post</button>
+    </form>
+    <!-- sharing options -->
+    <div class="share">
+      <span class='st_facebook_large' displayText='Facebook'></span>
+      <span class='st_twitter_large' displayText='Tweet'></span>
+      <span class='st_tumblr_large' displayText='Tumblr'></span>
+    </div>
+  </div>
+</div>
+{{/ post}}

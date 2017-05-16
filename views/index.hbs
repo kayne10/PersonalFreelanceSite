@@ -1,0 +1,151 @@
+<section class="intro">
+
+  <div id="success" class="alert alert-success" {{#if noMessages}}hidden{{/if}}>
+    {{ successMsg }}
+  </div>
+
+      <nav class="intro-nav" id="cd-header-nav">
+        <ul>
+          <li><a href="/developer">Web Development</a></li>
+          <li><a href="/gallery">Photography</a></li>
+          <li><a href="/explore">Explore Blog</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+
+      <header class="intro-header">
+        <div class="text-header" id="me">
+          <h2>Troy Kayne</h2>
+          <img src="images/separator.png" alt="" />
+          <h3>Developer | Photographer | Explorer</h3>
+        </div>
+
+        <a class="discover" id="discover" href="#about">
+          <i class="fa fa-angle-double-down"></i>
+        </a>
+
+      </header>
+
+    </section>
+
+    <section class="about" id="about">
+      <nav class="navbar navbar-default" id="cd-main-nav">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Logo</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-center">
+                <li><a href="/developer">Web Development</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/explore">Blog</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/shopping-cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+                <span class="badge">{{ session.cart.totalQty }}</span>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  {{# if login }}
+                    <li><a href="/users/profile">User Management</a></li>
+                    <li><a href="/users/logout">Log out</a></li>
+                  {{ else }}
+                    <li><a href="/users/signup">Sign Up</a></li>
+                    <li><a href="/users/signin">Log in</a></li>
+                  {{/if}}
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+      <h1>Do you have a website in mind?</h1>
+      <div class="about-wrapper">
+        <div class="about-thumbnail">
+          <h3>Choose Your Own Template</h3>
+          <p class="thumbnail-description">
+            Pick any of my available templates to get started on your website.
+          </p>
+          <ul>
+            <li>Find a desirable template</li>
+            <li>Purchase and Download</li>
+            <li>Ready for customization</li>
+            <li>So Simple</li>
+          </ul>
+          <a href="/developer#products"><button type="button">View Now</button></a>
+        </div>
+        <div class="about-thumbnail">
+          <h3>Choose A Freelance Package</h3>
+          <p class="thumbnail-description">
+            If you are unpleased or thinking about a more complex website than my templates, then contact me directly
+            with a Freelance package option in order to discuss a website just right for you.
+          </p>
+          <ul>
+            <li>Contact Me with Package option</li>
+            <li>Wait for finished product</li>
+            <li>Satisfaction Guranteed</li>
+          </ul>
+          <a href="/developer#packages"><button type="button">View Now</button></a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Carousel of Example Work -->
+    <div class="sample">
+      <h1>Sample Templates</h1>
+      <div class="carousel" id="carousel">
+            <button type="button" id="carousel-left-btn" class="carousel-btn" onclick="previousImage()"> &lang;</button>
+            <button type="button" id="carousel-right-btn" class="carousel-btn" onclick="nextImage()"> &rang;</button>
+      </div>
+    </div>
+
+
+    <!-- Introduce Photo Galleries and Social/Explore  -->
+    <section class="explore">
+      <h1>Explore</h1>
+      <div class="explore-wrapper">
+        <div class="explore-thumbnail">
+          <h3>Photo Galleries</h3>
+          <ul>
+            <li>Rocky Mountains</li>
+            <li>Israel</li>
+          </ul>
+          <a href="/gallery"><button type="button">View Galleries</button></a>
+        </div>
+        <div class="explore-thumbnail">
+          <h3>Camping Adventure Blog</h3>
+          <ul>
+            <li>Browse Through Adventurous places</li>
+            <li>Contribute by Posting, Sharing, and Commenting on Adventurous Posts</li>
+          </ul>
+          <button type="button">Explore Now</button>
+        </div>
+        <div class="explore-thumbnail">
+          <h3>Music Blog</h3>
+          <ul>
+            <li>Browse Through Music Posts</li>
+            <li>Contribue by Posting, Sharing, and Commenting on Adventurous Posts</li>
+          </ul>
+          <button type="button">Explore Now</button>
+        </div>
+      </div>
+
+    </section>

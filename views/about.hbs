@@ -1,0 +1,130 @@
+<section class="intro">
+
+      <header class="about-header">
+        <h1>About Troy Kayne</h1>
+
+        <a class="discover" href="#About">
+          <i class="fa fa-angle-double-down"></i>
+        </a>
+
+      </header>
+
+    </section>
+
+    <section class="About" id="About">
+      <nav class="navbar navbar-default" id="cd-main-nav">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Logo</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-center">
+                <li><a href="/developer">Web Development</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/explore">Blog</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/shopping-cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+                <span class="badge">{{ session.cart.totalQty }}</span>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  {{# if login }}
+                    <li><a href="/users/profile">User Management</a></li>
+                    <li><a href="/users/logout">Log out</a></li>
+                  {{ else }}
+                    <li><a href="/users/signup">Sign Up</a></li>
+                    <li><a href="/users/signin">Log in</a></li>
+                  {{/if}}
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="About-wrapper">
+        <section id="story" class="story">
+          <div class="story-thumbnail">
+            <img src="/images/me.jpg" alt="picture of me" />
+          </div>
+          <div class="story-p">
+            <div class="social">
+              <div class="links">
+                <a href="https://www.linkedin.com/in/troy-kayne-339838110/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="https://github.com/kayne10"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+                <a href="http://creative.colorado.edu/~trka2035/Projects/2/Portfolio/"><img src="/images/ath_ralphie.png" height="50px" alt="" /></a>
+              </div>
+            </div>
+            <p>
+              This paragraph will explain the services behind the website. I am a freelancer.
+              people can buy pre-made templates or contact me with a freelancing project.
+            </p>
+            <p>
+              This paragraph will describe how I got into Full-stack web developing. It will contain
+              my history of being a student at CU and how I wanted to learn real code.
+            </p>
+            <p>
+              This paragraph will mention how I love exploring new exotic and beautiful places. Photography and WEb developing.
+            </p>
+          </div>
+        </section>
+
+          <section class="skills-wrapper">
+            <div class="row skill-container" id="skills">
+              <h3>Tech Skills</h3>
+              <div class="col-sm-4">
+                <h5>Front-End Skills</h5>
+                <ul>
+                  <li data-score="4">HTML5
+                  </li>
+                  <li data-score="4">CSS3
+                  </li>
+                  <li data-score="3">JavaScript
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <h5>Back-End Skills</h5>
+                <ul>
+                  <li data-score="4">MySQL & MongoDB
+                  </li>
+                  <li data-score="3">Node
+                  </li>
+                  <li data-score="3">Python
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <h5>Full-Stack Skills</h5>
+                <ul>
+                  <li data-score="3">Node | Express | MongoDB
+                  </li>
+                  <li data-score="3">Django | Python | MySql
+                  </li>
+                    <li data-score="2">Ruby On Rails
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+        </div>
+    </section>

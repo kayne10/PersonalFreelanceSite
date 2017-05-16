@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Garage Sale</title>
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+
+    <!-- jQuery is required for Bootsrtap JS -->
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Garage Sale</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="shopping-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+     Shopping Cart <span class="badge" id="value"></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="signin.html">Sign in</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="account.html">User Account</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Welcome to the Garage Sale! <i class="fa fa-home" aria-hidden="true"></i></h1>
+        <p>Purchase the best used items for the best price.</p>
+        <p><a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <!-- Product Container -->
+    <div class="product-container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <!-- <div class="itemImage"></div> -->
+            <img src="img/borderlands2.jpg" alt="...">
+            <div class="caption">
+              <h3 class="itemName">Borderlands 2</h3>
+              <p class="itemDescription">Best RPG shooter in the books!!! There are over a billion guns in this game! Must buy!!</p>
+              <div class="clearfix">
+                <div class="price pull-left itemPrice">$40</div>
+                <a href="#" onclick="addToCart()" class="btn btn-success pull-right" role="button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <!-- <div class="itemImage"></div> -->
+            <img src="img/fishingrod.jpg" alt="...">
+            <div class="caption">
+              <h3 class="itemName">Fishing Rod</h3>
+              <p class="itemDescription">Fishing rod available!! Very good condition and has only been used a few times. Please Buy!!!</p>
+              <div class="clearfix">
+                <div class="price pull-left itemPrice">$10</div>
+                <a href="#" onclick="addToCart()" class="btn btn-success pull-right" role="button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <!-- <div class="itemImage"></div> -->
+            <img src="img/gamecube.jpg" alt="...">
+            <div class="caption">
+              <h3 class="itemName">Nintendo Gamecube</h3>
+              <p class="itemDescription">This gamecube is in great condition and has barely been used. I have an emulator now so this has no use to me anymore.</p>
+              <div class="clearfix">
+                <div class="price pull-left itemPrice">$20</div>
+                <a href="#" onclick="addToCart()" class="btn btn-success pull-right" role="button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <!-- <div class="itemImage"></div> -->
+            <img src="img/halo4.jpg" alt="...">
+            <div class="caption">
+              <h3 class="itemName">Halo 4</h3>
+              <p class="itemDescription">Epic Campaign!!! Buy this product!</p>
+              <div class="clearfix">
+                <div class="price pull-left itemPrice">$40</div>
+                <a href="#" onclick="addToCart()" class="btn btn-success pull-right" role="button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <!-- <div class="itemImage"></div> -->
+            <img src="img/Nintendo-DS.jpg" alt="...">
+            <div class="caption">
+              <h3 class="itemName">Nintendo DS</h3>
+              <p class="itemDescription">Barely used Nintendo DS. It is working perfectly and I would like to get it off my hands. Please Buy!!</p>
+              <div class="clearfix">
+                <div class="price pull-left itemPrice">$30</div>
+                <a href="#" onclick="addToCart()" class="btn btn-success pull-right" role="button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <!-- <div class="itemImage"></div> -->
+            <img src="img/snowboard.jpg" alt="...">
+            <div class="caption">
+              <h3 class="itemName">Snowboard Deck</h3>
+              <p class="itemDescription">Deck only!!! Snowboard deck is in great condition! Please buy!</p>
+              <div class="clearfix">
+                <div class="price pull-left itemPrice">$50</div>
+                <a href="#" onclick="addToCart()" class="btn btn-success pull-right" role="button">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Product Container -->
+
+
+    <footer>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Social Media</h3>
+          <ul>
+            <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Account Management</h3>
+          <ul>
+            <li><a href="account.html">User Account</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="signup.html">Sign In</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Garage Sale Services</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
