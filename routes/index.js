@@ -7,7 +7,7 @@ var flash = require('connect-flash');
 var archiver = require('archiver');
 var path = require('path');
 var cfg = require('../config/config')
-
+var stripe = require("stripe")(cfg.STRIPE.test_key);
 
 var Cart = require('../models/cart');
 var Template = require('../models/template');
@@ -151,7 +151,6 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
     return res.redirect('/shopping-cart');
   }
   var cart = new Cart(req.session.cart);
-  var stripe = require("stripe")("sk_test_0q40sKag9K6X7XLto27M7GA0");
   // Create a charge: this will charge the user's card
   stripe.charges.create({
     amount: cart.totalPrice * 100, //Amount in cents
@@ -173,7 +172,8 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
       order.save(function(err, result){
         req.session.cart = null;
         //SEND EMAIL
-        //mailer.sendMail()
+        //mailOptions = {};
+        //mailer.sendMail({});
         req.flash('success', 'Successfully bought product!');
         res.redirect('/');
       });
