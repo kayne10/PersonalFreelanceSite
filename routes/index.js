@@ -44,9 +44,19 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About Troy Kayne' });
 });
 
+
+// GET GALLERY
 router.get('/gallery', function(req, res, next) {
   res.render('gallery/index', { title: 'About Troy Kayne' });
 });
+router.get('/gallery/rocky-mtn', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '../public', 'rocky-mtn-gallery.html'));
+});
+router.get('/gallery/israel', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '../public', 'israel-gallery.html'));
+});
+// End of Gallery Routes
+
 
 router.get('/developer', function(req, res, next) {
   Template.find(function(err, docs) {
@@ -83,7 +93,7 @@ router.get('/add-to-cart/:id', function(req, res, next) {
 
 // Demos
 // Must edit template files.... should not be hard but it will annoying
-// res.sendFile('/public/index.html')
+// res.sendFile('../public/index.html')
 router.get('/developer/demo/:id', function(req, res, next) {
   templateId = req.params.id;
   Template.findById(templateId, function(err, template) {
