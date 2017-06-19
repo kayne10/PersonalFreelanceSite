@@ -4,6 +4,7 @@
 // Variables and Models
 var csrf = require('csurf');
 var flash = require('connect-flash');
+var passport = require('passport');
 var permission = require('mongoose-permission');
 var User = require('../models/user');
 var Post = require('../models/post');
@@ -12,29 +13,39 @@ var Post = require('../models/post');
 var csrfProtection = csrf();
 
 
-// var adminRoles = ["administrate","create","read","update","delete","write"];
-
-function requireRole(role) {
-    return function(req, res, next) {
-        if(req.session.user && req.session.user.permissions === role)
-            return next();
-        else
-            console.log(req.session.user);
-            res.sendStatus(403);
-    }
-}
-
-
-
 module.exports = function(app) {
 
   app.use(csrfProtection);
 
-  app.get('/admin', requireRole("administrate"), function(req, res, next) {
-    res.render('admin/index');
+  app.get('/admin/signin', function(req, res, next) {
+    var messages = req.flash('error');
+    res.render('admin/signin', {csrfToken: req.csrfToken(), messages: messages, hasErrors: messages.length > 0});
   });
-
-
+  app.post('/admin/signin', function(req, res, next){
+    passport.authenticate('local.signin', function(err, user, info) {
+      if (err) { return next(err); }
+      // Redirect if it fails
+      if (!user) { return res.redirect('/signup'); }
+      if(user.permissions[0] === 'administrate') {
+        req.logIn(user, function(err) {
+          if (err) { return next(err); }
+          // Redirect if it succeeds
+          return res.redirect('/admin/' + user._id);
+        });
+      }
+    })(req, res, next);
+  });
+  app.get('/admin/:id', function(req, res, next) {
+    var adminId = req.params.id;
+    User.findById(adminId, function(err, admin) {
+      if (err) {
+        return res.redirect('/');
+      }
+      else {
+        res.render('admin/index', {admin: admin});
+      }
+    });
+  });
 }
 
 

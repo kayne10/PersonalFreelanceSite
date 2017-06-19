@@ -93,7 +93,7 @@ router.get('/add-to-cart/:id', function(req, res, next) {
 
 // Demos
 // Must edit template files.... should not be hard but it will annoying
-// res.sendFile('../public/index.html')
+// res.sendFile(path.join(__dirname, '../public/index.html'))
 router.get('/developer/demo/:id', function(req, res, next) {
   templateId = req.params.id;
   Template.findById(templateId, function(err, template) {
