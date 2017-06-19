@@ -31,7 +31,7 @@ app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, 'views'));
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+//app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -59,10 +59,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-
+// Include Routing
 app.use('/', routes);
 app.use('/users', users);
-// app.use('/admin', adminController);
 // Fire Controller
 adminController(app);
 

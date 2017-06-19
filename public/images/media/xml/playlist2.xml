@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<data>
+	
+	 <li class= "playlistItem" data-type='local' data-mp3Path="media/audio/2/Bela_Fleck_The_Flecktones_-_The_Sinister_Minister.mp3" data-oggPath="media/audio/2/Bela_Fleck_The_Flecktones_-_The_Sinister_Minister.ogg"><a class="playlistNonSelected" href='#'>Bela Fleck and The Flecktones - The Sinister Minister</a></li>
+     <li class= "playlistItem" data-type='local' data-mp3Path="media/audio/2/Ratatat_-_Loud_Pipes.mp3"  data-oggPath="media/audio/2/Ratatat_-_Loud_Pipes.ogg"><a class="playlistNonSelected" href='#'>Ratatat - Loud Pipes</a></li>
+     <li class= "playlistItem" data-type='local' data-mp3Path="media/audio/2/Ratatat_-_Wildcat.mp3" data-oggPath="media/audio/2/Ratatat_-_Wildcat.ogg"><a class="playlistNonSelected" href='#'>Ratatat - Wildcat</a></li>
+	
+</data>
+
+
+

@@ -1,7 +1,13 @@
 body {
   max-width: 1280px;
   font-family: 'Poiret One', cursive;
+  margin: 0 auto;
 }
+
+html {
+  background: black;
+}
+
 /* Headers */
 
 header {

@@ -1,0 +1,340 @@
+
+
+
+/* big play for video player toggle */
+#componentWrapper .player_bigPlay{
+	display:none;
+	position:absolute;
+	width:76px;
+	height:76px;
+	top:50%;
+	left:50%;
+	/* offset btn 5px because of the player border so its aligned with open player tbn */
+	margin-left:-33px;
+	margin-top:-33px;
+}
+
+/* darken area behind the video player */
+#componentWrapper .player_bg{
+	/*display:none;*/
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	background:#111;
+}
+
+
+
+
+/* holder for video player */
+#componentWrapper .videoPlayer{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:640px;
+	height:360px;
+	margin-left:-320px;
+	margin-top:-180px;
+	background:#111;
+	
+	border:5px solid #ccc;
+	
+	/* needs not to be hidden (display:none), otherwise its not going to initialize in flash! */
+	opacity: 0; 
+	filter: alpha(opacity=0); 
+	-ms-filter: "alpha(opacity=0)"; 
+	-khtml-opacity: 0; 
+	-moz-opacity: 0; 
+}	
+
+/* local video player fullscreen */
+#componentWrapper .videoPlayer_fs{
+	position:fixed;
+	top:0px !important;
+	left:0px !important;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	background:#111;
+}
+
+
+/* holders for video */	
+.mediaHolder, 
+.youtubeHolder, 
+.vimeoHolder, 
+.mediaPreview{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	outline:none;
+	display:none;
+}
+
+/* hide youtube iframe outline for ie9 */
+.youtubeWrapper{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+
+.flashPreviewHolder{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	outline:none;
+	/* needs not to be hidden (display:none), otherwise its not going to initialize in flash!*/
+	opacity: 0; 
+	filter: alpha(opacity=0); 
+	-ms-filter: "alpha(opacity=0)"; 
+	-khtml-opacity: 0;  
+	-moz-opacity: 0; 
+}
+
+#flashPreview{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	outline:none;
+}
+
+
+
+
+
+
+
+
+/* LOCAL VIDEO PLAYER ELEMENTS */
+
+/* player controls */
+.playerControls{
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	width:620px;
+	height:33px;
+	/*background-image: url('../media/data/video_icons/bg.png'); */
+	background-repeat: repeat-x; 
+	display:none;
+}
+
+/* pause / play */
+.player_playControl{
+	position:absolute;
+	top:3px;
+	left:3px;
+	width:28px;
+	height:26px;
+	/*background:red;*/
+}
+
+.player_playControl img{
+	position:absolute;
+	display:block;
+	width:12px;
+	height:14px;
+	top:6px;
+	left:10px;
+}
+
+/* player progress, serves as hit as well */
+.player_progress{
+	position:absolute;
+	top:3px;
+	left:38px;
+	/* for hit */
+	width:220px;
+	height:26px;
+	/*background:green;*/
+}
+
+.playerControls .progress_bg{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:200px;
+	height:5px;
+	background:#333333;
+}
+
+.load_level{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:0px;
+	height:5px;
+	background:#ffffff;
+}
+
+.progress_level{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:0px;
+	height:5px;
+	background:#999;
+}
+
+/* progress tooltip */
+.player_progress_tooltip{
+	position:absolute;
+	top:-15px;
+	/* left is set in code (centered)*/
+	width:75px;
+	height:18px;
+	background:#333;
+	display:none;
+	
+	-moz-box-shadow: 1px 1px 1px #222;
+	-webkit-box-shadow: 1px 1px 1px #222;
+	box-shadow: 1px 1px 1px #222;
+}
+
+.player_progress_tooltip_value{
+	position:absolute;
+	top:2px;
+	/* left is set in code (centered)*/
+	color:#ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+
+/* media time */
+.player_mediaTime{
+	position:absolute;
+	top:9px;
+	right:143px;
+	
+	color:#e5e5e5;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+/* volume */
+.vplayer_volume{
+	position:absolute;
+	top:3px;
+	right:107px;
+	width:25px;
+	height:26px;
+	/*background:red;*/
+}
+
+.vplayer_volume img{
+	position:absolute;
+	display:block;
+	width:13px;
+	height:14px;
+	top:6px;
+	left:5px;
+}
+
+/* player volume, serves as hit as well */
+.volume_seekbar{
+	position:absolute;
+	top:3px;
+	right:40px;
+	/* for hit */
+	width:60px;
+	height:26px;
+	/*background:green;*/
+}
+
+.volume_bg{
+	position:absolute;
+	top:10px;
+	left:5px;
+	width:50px;
+	height:5px;
+	background:#ffffff;
+}
+
+.volume_level{
+	position:absolute;
+	top:10px;
+	left:5px;
+	width:0px;
+	height:5px;
+	background:#999;
+}
+
+/* volume tooltip */
+.player_volume_tooltip{
+	position:absolute;
+	top:-15px;
+	/* left is set in code (centered)*/
+	width:35px;
+	height:18px;
+	background:#333;
+	display:none;
+	
+	-moz-box-shadow: 1px 1px 1px #222;
+	-webkit-box-shadow: 1px 1px 1px #222;
+	box-shadow: 1px 1px 1px #222;
+}
+
+.player_volume_tooltip_value{
+	position:absolute;
+	top:2px;
+	/* left is set in code (centered)*/
+	color:#ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+
+/* fullscreen */
+.player_fullscreen{
+	position:absolute;
+	top:4px;
+	right:5px;
+	width:24px;
+	height:26px;
+	/*background:red;*/
+}
+
+.player_fullscreen img{
+	position:absolute;
+	display:block;
+	width:12px;
+	height:12px;
+	top:6px;
+	left:5px;
+}
+/* END LOCAL VIDEO PLAYER ELEMENTS */
+
+/* big play for local video */
+.bigPlay{
+	display:none;
+	position:absolute;
+	width:76px;
+	height:76px;
+	top:50%;
+	left:50%;
+	margin-left:-38px;
+	margin-top:-38px;
+}
+
+/*close video player btn */
+.player_close{
+	position:absolute;
+	width:30px;
+	height:30px;
+	top:0px;
+	right:-35px;
+}
+
+
