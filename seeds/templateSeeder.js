@@ -7,21 +7,18 @@ mongoose.connect('localhost:27017/freelance');
 
 var templates = [
   new Template({
-    imagePath: '/images/templates/firstTemplate.jpg',
-    price: 8,
-    name: 'First Template',
-    features: ['Responsive Design','5 html templates','1 CSS template', '1 Javascript File', 'Email API']
+    imagePath: '/images/templatesOne/firstTemplate.jpg',
+    name: 'Band Landing Page',
+    features: ['Responsive Design','1 html templates','1 CSS template', '1 Javascript File']
   }),
   new Template({
-    imagePath: '/images/templates/firstTemplate.jpg',
-    price: 15,
-    name: 'Second Template',
-    features: ['Responsive Design','Admin Panel','Approximately 10 html pages', 'User Authentication', 'Email API']
+    imagePath: '/images/templatesTwo/firstTemplate.jpg',
+    name: 'Photography Website',
+    features: ['Responsive Design','Approximately 5 html pages', '1 css template', '2 Javascript files']
   }),
   new Template({
-    imagePath: '/images/templates/firstTemplate.jpg',
-    price: 20,
-    name: 'Second Template',
+    imagePath: '/images/templatesThree/firstTemplate.jpg',
+    name: 'Shopping Cart Website',
     features: ['Responsive Design','Admin Panel','Approximately 10 html pages', 'User Authentication', 'Email API', 'E-Commerce']
   })
 ];

@@ -3,7 +3,7 @@
   <header class="products-header">
     <h1>Web Development Templates & Freelance</h1>
 
-    <a class="discover" href="#products">
+    <a class="discover" href="#packages">
       <i class="fa fa-angle-double-down"></i>
     </a>
 
@@ -11,7 +11,7 @@
 
 </section>
 
-<section class="products" id="products">
+<section class="packages" id="packages">
   <nav class="navbar navbar-default" id="cd-main-nav">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,7 +38,7 @@
           <li>
             <a href="/shopping-cart">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
-            <span class="badge">{{ session.cart.totalQty }}</span>
+            <!-- <span class="badge">{{ session.cart.totalQty }}</span> -->
             </a>
           </li>
           <li class="dropdown">
@@ -58,10 +58,64 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+    <h1>Contact Me With A Website Idea</h1>
+    <h3>Pick the Freelance package that best suits your need </h3>
+    <a href="#products"><button type="button" class="skip">Skip to my Projects and Templates</button></a>
+    <div class="package-wrapper">
+      <div class="package-thumbnail">
+        <h3>Package A</h3>
+        <div class="caption">
+          <p>
+            Charge Rate: $8/hr
+          </p>
+          <ul>
+            <li>Static Website</li>
+            <li>Personal Landing Page</li>
+            <li>Personal Portfolio</li>
+            <li>Responsive</li>
+          </ul>
+        </div>
+      </div>
+      <div class="package-thumbnail">
+        <h3>Package B</h3>
+        <div class="caption">
+          <p>
+            Charge Rate: $12/hr
+          </p>
+          <ul>
+            <li>Full Stack Website</li>
+            <li>Dynamic Functionality</li>
+            <li>Involves Database</li>
+            <li>Responsive</li>
+            <li>Merchandise & E-commerce</li>
+            <li>User Authentication</li>
+            <li>Admin Panel</li>
+          </ul>
+        </div>
+      </div>
+      <div class="package-thumbnail">
+        <h3>Package C</h3>
+        <div class="caption">
+          <p>
+            Charge Rate: $20/hr
+          </p>
+          <ul>
+            <li>Full Stack Web Application</li>
+            <li>Complex Dynamic Functionality</li>
+            <li>Involves Larger Database</li>
+            <li>Responsive</li>
+            <li>User Authentication</li>
+            <li>Admin Panel</li>
+            <li>Merchandise & E-commerce</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
 
+<section class="products" id="products">
   <div class="products-templates">
     <h1>Browse Through My Website Templates</h1>
-    <a href="#packages"><button type="button" class="skip">Skip to Freelance Options</button></a>
     <div class="product-wrapper">
         {{# each templates}}
           {{# each this }}
@@ -78,7 +132,7 @@
                 </ul>
                 <h3>${{ this.price }}</h3>
                 <a href="/developer/demo/{{this._id}}"><button type="button" class="btn btn-default">Demo</button></a>
-                <a href="/add-to-cart/{{this._id}}"><button type="button" class="btn btn-default">Add to Cart</button></a>
+                <a href="/add-to-cart/{{this._id}}"><button type="button" class="btn btn-default add">Add to Cart</button></a>
               </div>
             </div>
           </div>
@@ -86,59 +140,4 @@
         {{/each}}
       </div>
     </div>
-</section>
-
-<section class="packages" id="packages">
-  <h1>Contact Me With A Website Idea</h1>
-  <h3>Pick the Freelance package that best suits your need </h3>
-  <div class="package-wrapper">
-    <div class="package-thumbnail">
-      <h3>Package A</h3>
-      <div class="caption">
-        <p>
-          Charge Rate: $8/hr
-        </p>
-        <ul>
-          <li>Static Website</li>
-          <li>Personal Landing Page</li>
-          <li>Personal Portfolio</li>
-          <li>Responsive</li>
-        </ul>
-      </div>
-    </div>
-    <div class="package-thumbnail">
-      <h3>Package B</h3>
-      <div class="caption">
-        <p>
-          Charge Rate: $12/hr
-        </p>
-        <ul>
-          <li>Full Stack Website</li>
-          <li>Dynamic Functionality</li>
-          <li>Involves Database</li>
-          <li>Responsive</li>
-          <li>Merchandise & E-commerce</li>
-          <li>User Authentication</li>
-          <li>Admin Panel</li>
-        </ul>
-      </div>
-    </div>
-    <div class="package-thumbnail">
-      <h3>Package C</h3>
-      <div class="caption">
-        <p>
-          Charge Rate: $20/hr
-        </p>
-        <ul>
-          <li>Full Stack Web Application</li>
-          <li>Complex Dynamic Functionality</li>
-          <li>Involves Larger Database</li>
-          <li>Responsive</li>
-          <li>User Authentication</li>
-          <li>Admin Panel</li>
-          <li>Merchandise & E-commerce</li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </section>

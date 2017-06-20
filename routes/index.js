@@ -13,8 +13,6 @@ var Cart = require('../models/cart');
 var Template = require('../models/template');
 var Order = require('../models/order');
 var Post = require('../models/post');
-var Comment = require('../models/comment');
-
 
 var csrfProtection = csrf();
 router.use(csrfProtection);
@@ -100,17 +98,17 @@ router.get('/developer/demo/:id', function(req, res, next) {
     if (err) {
       return res.redirect('/developer#products');
     }
-    if (template.price < 10) {
+    if (template.name === 'Band Landing Page') {
       res.writeHead(200, {'Content-Type': 'text/html'});
       var readableStream = fs.createReadStream(path.join(__dirname, 'fixtures/templateOne', 'index.html'));
       readableStream.pipe(res);
     }
-    if (template.price === 15) {
+    if (template.name === 'Photography Website') {
       res.writeHead(200, {'Content-Type': 'text/html'});
       var readableStream = fs.createReadStream(path.join(__dirname, 'fixtures/templateOne', 'index.html'));
       readableStream.pipe(res);
     }
-    if (template.price === 20) {
+    if (template.name === 'Shopping Cart Website') {
       res.writeHead(200, {'Content-Type': 'text/html'});
       var readableStream = fs.createReadStream(path.join(__dirname, 'fixtures/templateOne', 'index.html'));
       readableStream.pipe(res);
@@ -217,13 +215,11 @@ router.get('/explore/post/:id', function(req, res, next) {
     if (err) {
       return res.redirect('/explore#explore');
     }
-    var comments = post.comments;
-    res.render('explore/post', {
-      post: post,
-      comments: comments
-    });
+    res.render('explore/post', {post: post});
   });
 });
+
+// Must eliminate commenting on posts for now!!!
 
 router.get('/contact', function(req, res, next) {
   res.render('contact', {title: 'Contact', csrfToken: req.csrfToken()});

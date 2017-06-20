@@ -36,6 +36,8 @@ header h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .about-header {
   background: url('/images/devEnv.jpg') no-repeat center center fixed;
@@ -47,13 +49,12 @@ header h1 {
   filter: grayscale(100%);
 }
 .explore-header {
-  background: url('/images/headerBackground.jpg') no-repeat center center fixed;
+  background: url('/images/explore.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+
 }
 .gallery-header {
   background: url('/images/evanstonSunset.jpg') no-repeat center center fixed;
@@ -82,7 +83,7 @@ header img {
 .discover {
   position: absolute;
   color: #ffffff;
-  bottom: 20px;
+  bottom: 100px;
   right: 0;
   left: 0;
   opacity: 0.8;
@@ -256,10 +257,12 @@ button:focus, button.active:focus {
 .packages {
   width: 100%;
   height: auto;
-  padding-top: 5em;
 }
 .packages h1, .packages h3 {
   text-align: center;
+}
+.packages h1 {
+  padding-top: 2em;
 }
 .package-wrapper {
   width: 90%;
@@ -278,8 +281,8 @@ button:focus, button.active:focus {
   padding: 2em 2em;
   border: solid 2px black;
 }
-.skill {
-
+.add {
+  cursor: not-allowed;
 }
 
 /* About Me page */
@@ -290,6 +293,7 @@ button:focus, button.active:focus {
 }
 .About-wrapper {
   width: 100%;
+  background: grey;
 }
 .story {
   width: 100%;
@@ -310,6 +314,7 @@ button:focus, button.active:focus {
   width: 60%;
   padding: 4em 4em;
   z-index: 9;
+  background: rgba(255, 255, 255, 0.5);
 }
 .skills-wrapper {
   width: 100%;
@@ -434,4 +439,13 @@ button:focus, button.active:focus {
 /* Shopping Cart Page */
 .shopping-cart {
   padding-top: 4em;
+}
+.shopping-tease {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px;
+  padding: 2em 3em;
+}
+.responsive {
+  max-width: 100%;
 }

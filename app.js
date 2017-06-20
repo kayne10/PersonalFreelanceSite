@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressHbs = require('express-handlebars');
 var mongoose = require('mongoose');
+var csrf = require('csurf');
 var session = require('express-session');
 var passport = require('passport');
 var flash = require('connect-flash');
@@ -48,6 +49,7 @@ app.use(session({
     maxAge  : 24*60*60*1000
   }
 }));
+app.use(csrf({cookie: true}));
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());

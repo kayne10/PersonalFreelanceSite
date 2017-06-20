@@ -10,29 +10,19 @@ var posts = [
     category: "music",
     imagePath: "/images/blog/vanMorrison.jpg",
     title: "Van Morrison",
-    description: "Just a simple description",
-    comments: [
-      {body: "Van the man!", _userId: "586d4c6be0fcdc282eb9be53"}
-    ]
+    description: "Just a simple description"
   }),
   new Post({
     category: "music",
     imagePath: "/images/blog/markKnopfler.jpg",
     title: "Mark Knopfer",
-    description: "Just a simple description",
-    comments: [
-      {body: "He shreds the guitar", _userId: "586d4c6be0fcdc282eb9be53"}
-    ]
+    description: "Just a simple description"
   }),
   new Post({
     category: "hike",
     imagePath: "/images/blog/cool.jpg",
     title: "Cool new hike",
-    description: "just a simple description",
-    comments: [
-      {body: "Beautiful", _userId: "586d4c6be0fcdc282eb9be53"},
-      {body: "I love the view", _userId: "586c440debdab61da01f7be2"}
-    ]
+    description: "just a simple description"
   })
 ];
 

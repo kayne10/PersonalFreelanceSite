@@ -41,6 +41,7 @@ $(function(){
 });
 
 
+
 // Explore Category Filters
 
 function musicFilter() {
