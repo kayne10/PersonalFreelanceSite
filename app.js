@@ -22,7 +22,13 @@ var users = require('./routes/users');
 
 var app = express();
 
-mongoose.connect('localhost:27017/freelance');
+// Use native Node promises
+mongoose.Promise = global.Promise;
+
+mongoose.connect('localhost:27017/freelance')
+  .then(() =>  console.log('Successfully Connected to Server'))
+  .catch((err) => console.error(err));
+
 require('./config/passport');
 
 
@@ -53,7 +59,7 @@ app.use(csrf({cookie: true}));
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); //load static files
 
 app.use(function(req, res, next) {
   res.locals.login = req.isAuthenticated();
