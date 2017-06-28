@@ -2,10 +2,16 @@ body {
   max-width: 1280px;
   font-family: 'Poiret One', cursive;
   margin: 0 auto;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 html {
-  background: black;
+  background: url('/images/devEnv.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Headers */
@@ -91,9 +97,12 @@ header img {
   text-align: center;
   z-index: 9;
 }
-
-
 /* End Headers */
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
 /* Intro Section */
 
 .intro {
@@ -150,6 +159,9 @@ header img {
 .about {
   height: auto;
   width: 100%;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: -1.5em;
+  color: white;
 }
 .about h1 {
   padding-top: 1.75em;
@@ -170,6 +182,9 @@ header img {
 
 .explore {
   height: 500px;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: -1.5em;
+  color: white;
 }
 
 .explore h1 {
@@ -193,6 +208,9 @@ header img {
   height: 100%;
   width: 100%;
   text-align: center;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: -1.5em;
+  color: white;
 }
 
 .carousel {
@@ -222,11 +240,27 @@ button:focus, button.active:focus {
     outline: none;
 }
 
+.custom-btn {
+  border-radius: 10px;
+  color: white;
+  background: rgb(22, 54, 107);
+  border: 2px solid white;
+  padding: 0.5em 0.5em;
+}
+.custom-btn:hover, .custom-btn:active {
+  color: white;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+/* End of Intro */
+
 /* Products Page */
 
 .products {
   width: 100%;
   height: auto;
+  background: rgba(22, 54, 107, 0.3);
+  color: white;
 }
 .products h1 {
   text-align: center;
@@ -257,6 +291,8 @@ button:focus, button.active:focus {
 .packages {
   width: 100%;
   height: auto;
+  background: rgba(22, 54, 107, 0.3);
+  color: white;
 }
 .packages h1, .packages h3 {
   text-align: center;
@@ -293,7 +329,7 @@ button:focus, button.active:focus {
 }
 .About-wrapper {
   width: 100%;
-  background: grey;
+  background: rgba(22, 54, 107, 0.3);
 }
 .story {
   width: 100%;
@@ -319,7 +355,7 @@ button:focus, button.active:focus {
 .skills-wrapper {
   width: 100%;
   height: auto;
-  background: black;
+  background: rgba(0,0,0,0.5);
   color: white;
 }
 .skill-container {
@@ -351,10 +387,9 @@ button:focus, button.active:focus {
 .gallery {
   height: auto;
   width: 100%;
-}
-.gallery h1 {
-  text-align: center;
-  padding: 4em 4em;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: -1.5em;
+  color: white;
 }
 .rocky-mtn {
   width: 100%;
@@ -376,13 +411,35 @@ button:focus, button.active:focus {
 }
 .gallery-description {
   width: 100%;
-  background-color: white;
+  text-align: center;
   padding: 4em 4em;
-  margin-top: 3em;
-  height: 300px;
+  height: auto;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: 2.5em;
+  color: white;
+}
+.gallery-description p {
+  margin: 0 auto;
+  padding: 2em 0;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: normal;
+  width: 80%;
 }
 .gallery-description a {
   margin: 0 auto;
+}
+.gallery h1 {
+  text-align: center;
+  padding: 4em 4em;
+}
+.gallery-heading {
+  border: 4px solid white;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 0 15px black;
 }
 
 
@@ -422,9 +479,20 @@ button:focus, button.active:focus {
 .contact-wrapper {
   width: 50%;
   margin: 0 auto;
+  background: rgba(22, 54, 107, 0.3);
+  color: white;
+  padding: 3em 3em;
 }
-
-
+.message {
+  word-break: break-word;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+}
+textarea {
+  color: black;
+}
 
 /* User Profile Page */
 .welcome-container {
@@ -445,6 +513,7 @@ button:focus, button.active:focus {
   margin: 0 auto;
   box-shadow: 0 0 15px;
   padding: 2em 3em;
+  color: white;
 }
 .responsive {
   max-width: 100%;

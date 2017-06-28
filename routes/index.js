@@ -229,10 +229,11 @@ router.post('/contact', function(req, res, next) {
   var emailSender = req.body.email;
   var emailSubject = req.body.subject;
   var emailContent = req.body.content;
+  // console.log(emailContent);
   var mailOptions = {
     from: emailSender,
     to: cfg.USER,
-    subject: 'Website Notification',
+    subject: emailSubject,
     text: emailContent
   };
   mailer.sendMail(mailOptions, function(error, info){

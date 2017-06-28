@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressHbs = require('express-handlebars');
 var mongoose = require('mongoose');
-var csrf = require('csurf');
 var session = require('express-session');
 var passport = require('passport');
 var flash = require('connect-flash');
@@ -60,12 +59,6 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public'))); //load static files
-
-app.use(function(req, res, next) {
-  res.locals.login = req.isAuthenticated();
-  res.locals.session = req.session;
-  next();
-});
 
 // Include Routing
 app.use('/', routes);

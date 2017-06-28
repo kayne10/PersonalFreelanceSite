@@ -41,18 +41,16 @@ $(function(){
 });
 
 
-
-// Explore Category Filters
-
-function musicFilter() {
-
-}
-
-function hikingFilter() {
-
-}
-
-
+// Convert input to textarea
+// $("input.convert").each(function () {
+//     var $txtarea = $("<textarea />");
+//     $txtarea.attr("id", this.id);
+//     $txtarea.attr("rows", 8);
+//     $txtarea.attr("cols", 60);
+//     $txtarea.val(this.value);
+//     $(this).replaceWith($txtarea);
+//     console.log(this.id);
+// });
 
 // Index page animations
 

@@ -60,53 +60,56 @@
 
     <h1>Contact Me With A Website Idea</h1>
     <h3>Pick the Freelance package that best suits your need </h3>
-    <a href="#products"><button type="button" class="skip">Skip to my Projects and Templates</button></a>
+    <a href="#products"><button type="button" class="custom-btn">Skip to my Projects and Templates</button></a>
     <div class="package-wrapper">
-      <div class="package-thumbnail">
+      <div class="col-md-4">
         <h3>Package A</h3>
         <div class="caption">
           <p>
-            Charge Rate: $8/hr
+            Charge Rate: $15/hr
           </p>
           <ul>
             <li>Static Website</li>
             <li>Personal Landing Page</li>
             <li>Personal Portfolio</li>
             <li>Responsive</li>
+            <li>Front-end Services only</li>
           </ul>
         </div>
       </div>
-      <div class="package-thumbnail">
+      <div class="col-md-4">
         <h3>Package B</h3>
-        <div class="caption">
-          <p>
-            Charge Rate: $12/hr
-          </p>
-          <ul>
-            <li>Full Stack Website</li>
-            <li>Dynamic Functionality</li>
-            <li>Involves Database</li>
-            <li>Responsive</li>
-            <li>Merchandise & E-commerce</li>
-            <li>User Authentication</li>
-            <li>Admin Panel</li>
-          </ul>
-        </div>
-      </div>
-      <div class="package-thumbnail">
-        <h3>Package C</h3>
         <div class="caption">
           <p>
             Charge Rate: $20/hr
           </p>
           <ul>
+            <li>Seeking Database</li>
+            <li>Responsive</li>
+            <li>User Authentication</li>
+            <li>Admin Panel</li>
+            <li>RESTful API</li>
+            <li>Full Stack and DevOps Services</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Package C</h3>
+        <div class="caption">
+          <p>
+            Charge Rate: $25/hr
+          </p>
+          <ul>
             <li>Full Stack Web Application</li>
-            <li>Complex Dynamic Functionality</li>
-            <li>Involves Larger Database</li>
+            <li>Seeking Scalable Database</li>
             <li>Responsive</li>
             <li>User Authentication</li>
             <li>Admin Panel</li>
             <li>Merchandise & E-commerce</li>
+            <li>RESTful API</li>
+            <li>Full Stack and DevOps Services</li>
+            <li>AWS</li>
           </ul>
         </div>
       </div>
@@ -130,9 +133,9 @@
                     <li>{{ this }}</li>
                   {{/each}}
                 </ul>
-                <h3>${{ this.price }}</h3>
+                <!-- <h3>${{ this.price }}</h3> -->
                 <a href="/developer/demo/{{this._id}}"><button type="button" class="btn btn-default">Demo</button></a>
-                <a href="/add-to-cart/{{this._id}}"><button type="button" class="btn btn-default add">Add to Cart</button></a>
+                <!-- <a href="/add-to-cart/{{this._id}}"><button type="button" class="btn btn-default add">Add to Cart</button></a> -->
               </div>
             </div>
           </div>
