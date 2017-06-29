@@ -11,6 +11,7 @@ var passport = require('passport');
 var flash = require('connect-flash');
 var validator = require('express-validator');
 var MongoStore = require('connect-mongo')(session);
+var csrf = require('csurf');
 
 
 // Route Configuration
@@ -54,7 +55,7 @@ app.use(session({
     maxAge  : 24*60*60*1000
   }
 }));
-app.use(csrf({cookie: true}));
+app.use(csrf());
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
