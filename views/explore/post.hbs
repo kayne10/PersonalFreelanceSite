@@ -47,10 +47,11 @@
 
 <!-- Individual Post View -->
 {{# post}}
-<div class="col-md-6 post-thumbnail">
-  <img src="{{ this.imagePath }}" class="img-responsive" alt="...">
+<div class="post-view">
+  <img src="{{ this.imagePath }}" class="responsive" alt="...">
   <div class="caption">
     <h3>{{ this.title }}</h3>
+    <h4>Category: {{ this.category }}</h4>
     <p>
       {{ this.description }}
     </p>
@@ -58,7 +59,6 @@
     <div class="share">
       <span class='st_facebook_large' displayText='Facebook'></span>
       <span class='st_twitter_large' displayText='Tweet'></span>
-      <span class='st_tumblr_large' displayText='Tumblr'></span>
     </div>
   </div>
 </div>

@@ -62,16 +62,30 @@
 </section>
 
 <div class="blog-wrapper">
-  <!-- small nav, carousel, my tunes -->
+  <!-- Filter Implementation -->
+
+  <!-- hike container -->
   <div class="row blog-row">
-    <div class="col-md-3">
-      <h1>new nav section</h1>
-    </div>
-    <div class="col-md-6">
-      <h1>new carousel section</h1>
-    </div>
-    <div class="col-md-3">
-      <h1>new section for my tunes</h1>
+    <div class="hike-container">
+      {{#each hikePosts}}
+      <a href="/explore/post/{{ this._id }}">
+        <div class="col-md-4 post-thumbnail">
+          <img src="{{ this.imagePath }}" class="responsive" alt="...">
+          <div class="caption">
+            <h3>{{ this.title }}</h3>
+            <h5>Category: {{ this.category }}</h5>
+            <p>
+              Click for more
+            </p>
+            <!-- sharing options -->
+            <div class="share">
+              <span class='st_facebook_large' displayText='Facebook'></span>
+              <span class='st_twitter_large' displayText='Tweet'></span>
+            </div>
+          </div>
+        </div>
+      </a>
+      {{/each}}
     </div>
   </div>
   <!-- music container -->
@@ -79,18 +93,18 @@
     <div class="music-container">
       {{#each musicPosts}}
         <a href="/explore/post/{{ this._id }}">
-          <div class="col-md-4 post-thumbnail">
+          <div class="col-md-6 post-thumbnail">
             <img src="{{ this.imagePath }}" class="img-responsive" alt="...">
             <div class="caption">
               <h3>{{ this.title }}</h3>
+              <h5>Category: {{ this.category }}</h5>
               <p>
-                {{ this.description }}
+                Click for more
               </p>
               <!-- sharing options -->
               <div class="share">
                 <span class='st_facebook_large' displayText='Facebook'></span>
                 <span class='st_twitter_large' displayText='Tweet'></span>
-                <span class='st_tumblr_large' displayText='Tumblr'></span>
               </div>
             </div>
           </div>
@@ -98,25 +112,26 @@
       {{/each}}
     </div>
   </div>
-  <!-- hike container -->
   <div class="row blog-row">
     <div class="hike-container">
-      {{#each hikePosts}}
-        <div class="col-md-6 post-thumbnail">
+      {{#each campPosts}}
+      <a href="/explore/post/{{ this._id }}">
+        <div class="col-md-4 post-thumbnail">
           <img src="{{ this.imagePath }}" class="img-responsive" alt="...">
           <div class="caption">
             <h3>{{ this.title }}</h3>
+            <h5>Category: {{ this.category }}</h5>
             <p>
-              {{ this.description }}
+              Click for more
             </p>
             <!-- sharing options -->
             <div class="share">
-              <a href="#">Share</a>
-              <a href="#">Share</a>
-              <a href="#">Share</a>
+              <span class='st_facebook_large' displayText='Facebook'></span>
+              <span class='st_twitter_large' displayText='Tweet'></span>
             </div>
           </div>
         </div>
+      </a>
       {{/each}}
     </div>
   </div>

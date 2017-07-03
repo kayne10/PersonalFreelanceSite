@@ -7,7 +7,7 @@ var flash = require('connect-flash');
 var archiver = require('archiver');
 var path = require('path');
 var cfg = require('../config/config')
-var stripe = require("stripe")(cfg.STRIPE.test_key);
+//var stripe = require("stripe")(cfg.STRIPE.test_key);
 
 var Cart = require('../models/cart');
 var Template = require('../models/template');
@@ -193,6 +193,7 @@ router.get('/explore', function(req, res, next) {
   Post.find(function(err, docs) {
     var musicRelated = [];
     var hikeRelated = [];
+    var campRelated = [];
     for (var i = 0; i < docs.length; i++) {
       if (docs[i].category === "music" ) {
         musicRelated.push(docs[i]);
@@ -200,11 +201,15 @@ router.get('/explore', function(req, res, next) {
       if (docs[i].category === "hike") {
         hikeRelated.push(docs[i]);
       }
+      if (docs[i].category === "camp") {
+        campRelated.push(docs[i]);
+      }
     }
     res.render('explore/index', {
       title: 'Explore',
       musicPosts: musicRelated,
       hikePosts: hikeRelated,
+      campPosts: campRelated
     });
   });
 });
@@ -234,7 +239,7 @@ router.post('/contact', function(req, res, next) {
     from: emailSender,
     to: cfg.USER,
     subject: emailSubject,
-    text: emailContent
+    text: 'From: ' + emailSender + '\n\n' + emailContent
   };
   mailer.sendMail(mailOptions, function(error, info){
     if (error) {
