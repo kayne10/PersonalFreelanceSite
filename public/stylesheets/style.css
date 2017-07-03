@@ -231,6 +231,9 @@ header img {
     width: 100%;
     margin: 0 auto;
     background-image: url('../images/pumpkin-patch.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -569,4 +572,33 @@ textarea {
   margin-top: 4em;
   padding-bottom: 4em;
   margin-bottom: 4em;
+}
+
+/* responsive features */
+@media screen and (max-width: 767px) {
+  .intro-nav ul li a {
+    display: none;
+  }
+  .about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .about-thumbnail {
+    width: 90%;
+  }
+  .sample {
+    display: none;
+  }
+  .package-wrapper {
+    display: block;
+    width: 95%;
+  }
+  .product-wrapper {
+    display: block;
+    width: 95%;
+  }
+  .blog-row {
+    width: 80%;
+  }
 }
