@@ -118,7 +118,7 @@
 
 <section class="products" id="products">
   <div class="products-templates">
-    <h1>Browse Through My Website Templates</h1>
+    <h1>Browse Through My Static Website Templates</h1>
     <div class="product-wrapper">
         {{# each templates}}
           {{# each this }}
@@ -134,7 +134,8 @@
                   {{/each}}
                 </ul>
                 <!-- <h3>${{ this.price }}</h3> -->
-                <a href="/developer/demo/{{this._id}}"><button type="button" class="btn btn-default">Demo</button></a>
+                
+                <center><a href="/developer/demo/{{this._id}}"><button type="button" class="custom-btn">Demo</button></a></center>
                 <!-- <a href="/add-to-cart/{{this._id}}"><button type="button" class="btn btn-default add">Add to Cart</button></a> -->
               </div>
             </div>

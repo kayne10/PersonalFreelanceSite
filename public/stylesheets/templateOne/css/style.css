@@ -1,23 +1,14 @@
-.parallax [class*="bg__"] {
-  position: relative;
-  text-indent: -9999px;
-  background-attachment: fixed;
-  background-position: top center;
-  background-size: cover;
-}
 
 .navbar {
-	background: transparent;
+	background: black;
 	position: fixed;
-}
-
-section {
-	box-shadow: nset 0 0 1em #111;
 }
 
 section header {
 	background: black;
 	height: 20%;
+  margin-top: -1.5em;
+  color: white;
 }
 
 ul {
@@ -25,122 +16,116 @@ ul {
 }
 
 .container-fluid {
-  height:100%;
+  height:90%;
+  width: 100%;
 }
 
-#labs ul {
+#news ul {
   list-style: circle;
 }
 
-#projects a {
+#tour a {
   font-weight: bold;
 }
 
 #intro {
-	background-image: url(../img/me.jpg);
+	background-image: url('/images/templateOne/band1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  background-size: 100%;
   margin-top: -20px;
+  height: auto;
 }
 
-#labs {
-	background-image: url(../img/sunset.jpg);
-  margin-top: -20px;
+#news {
+  background: black;
+  color: white;
+  box-shadow: 0 0 15px;
 }
 
-#labs header h1 {
+#news header h1 {
 	color: white;
   text-align: center;
 	text-indent: 0;
   font-family: 'Exo 2', sans-serif;
+  height: 3em;
 }
 
-#labs .panel-header {
-	text-indent: 0;
+#news .thumbnail {
+  background: transparent;
+  border: 3px solid white;
 }
-
-.bg__bar header h1 {
-	color: white;
+#news .thumbnail .caption {
+  color: white;
 }
 
 /*INTRO SECTION*/
 
-#intro .panel-header, .panel-body {
-	text-indent: 0;
+.welcome {
+  width: 100%;
+  height: 5em;
+  text-align: center;
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-left: -1.5em;
+  margin-bottom: 1.5em;
 }
 
-#intro ul li {
-  color: black;
-}
 
-#projects {
-	background-image: url(../img/gross_res.jpg);
-  /*-webkit-filter: invert(100%); /* Chrome, Safari, Opera */
-  /*filter: invert(90%);*/
-  margin-top: -20px;
-}
-
-#projects header h1 {
-	color: white;
-	text-align: center;
-	text-indent: 0;
-  font-family: 'Exo 2', sans-serif;
-}
-
-#projects .panel-header {
-	text-indent: 0;
-}
-
-#other {
-  margin-top: -20px;
-  background-image: url(../img/moabshot.jpg);
-}
-
-#other header h1 {
-	color: white;
-	text-align: center;
-	text-indent: 0;
-  font-family: 'Exo 2', sans-serif;
-}
-
-#labs .panel {
-	background:rgba(255,255,255,0.5);
-}
-
-#projects .panel {
-	background:rgba(255,255,255,0.5);
-}
-
-#intro .panel {
-  background: rgba(255,255,255,0.5);
-}
-
-#other .panel {
-  background: rgba(0,0,0,0.5);
-}
-
-#other .panel-body h5, li {
+#tour {
+	background-image: url(../img/band.jpg);
+  background: black;
   color: white;
 }
 
-#other .panel-header h3 {
+#tour header h1 {
   color: white;
   text-align: center;
+	text-indent: 0;
+  font-family: 'Exo 2', sans-serif;
+  height: 6em;
+  background-image: url('/images/templateOne/band2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#bio, #tech {
-  margin-top: 50px;
+.table {
+  margin-top: 4em;
+  color: white;
+}
+
+
+#music {
+  background: black;
+  color: white;
+}
+
+#music header h1 {
+  color: white;
+  text-align: center;
+	text-indent: 0;
+  font-family: 'Exo 2', sans-serif;
+  height: 6em;
+  background-image: url('/images/templateOne/band3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.soundcloud-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6em;
 }
 
 .responsive {
   max-width: 100%;
 }
-
-#other h3 {
-  color: white;
-}
-
 /*Vertical Nav*/
 /* No Touch devices */
 .cd-nav-trigger {
@@ -228,10 +213,4 @@ ul {
   -ms-transform-origin: 100% 50%;
   -o-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
-}
-
-
-.bg__bazz .panel-header h3 {
-  color: black;
-  text-indent: 0;
 }

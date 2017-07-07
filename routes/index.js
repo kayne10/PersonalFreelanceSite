@@ -103,15 +103,12 @@ router.get('/developer/demo/:id', function(req, res, next) {
       var readableStream = fs.createReadStream(path.join(__dirname, 'fixtures/templateOne', 'index.html'));
       readableStream.pipe(res);
     }
-    if (template.name === 'Photography Website') {
-      res.writeHead(200, {'Content-Type': 'text/html'});
-      var readableStream = fs.createReadStream(path.join(__dirname, 'fixtures/templateOne', 'index.html'));
-      readableStream.pipe(res);
+    if (template.name === 'Personal Landing Page') {
+      res.sendFile(path.join(__dirname, '../routes/fixtures/templateTwo', 'personal-landing.html'));
     }
     if (template.name === 'Shopping Cart Website') {
-      res.writeHead(200, {'Content-Type': 'text/html'});
-      var readableStream = fs.createReadStream(path.join(__dirname, 'fixtures/templateOne', 'index.html'));
-      readableStream.pipe(res);
+      // global link: http://creative.colorado.edu/~trka2035/Projects/7/
+      res.sendFile(path.join(__dirname, '../routes/fixtures/templateThree', 'index.html'));
     }
   });
 });

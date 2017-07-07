@@ -336,6 +336,12 @@ button:focus, button.active:focus {
 .add {
   cursor: not-allowed;
 }
+.products .products-templates .product-wrapper .thumbnail {
+  background: transparent;
+}
+.products .products-templates .product-wrapper .thumbnail .caption {
+  color: white;
+}
 
 /* About Me page */
 
