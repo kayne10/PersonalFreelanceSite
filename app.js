@@ -19,15 +19,22 @@ var csrf = require('csurf');
 var adminController = require('./controllers/admin');
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var configDB = require('./config/database');
 
 var app = express();
 
 // Use native Node promises
 mongoose.Promise = global.Promise;
 
-mongoose.connect('localhost:27017/freelance')
+//Local Connection for MongoDB
+mongoose.connect(configDB.localURL)
   .then(() =>  console.log('Successfully Connected to Server'))
   .catch((err) => console.error(err));
+
+//Instance Connection for MongoDB
+//mongoose.connect(configDB.url)
+//  .then(() =>  console.log('Successfully Connected to Server'))
+//  .catch((err) => console.error(err));
 
 require('./config/passport');
 
