@@ -5,11 +5,11 @@ var counter = 0;
 
 
 var images = [
-  'dark-fall-mountains',
-  'fall-color-border',
-  'fall-tree-and-sky',
-  'misty-road',
-  'pumpkin-patch'
+  'headerBackground',
+  'explore',
+  'boulderBackground',
+  'grossRainbow',
+  'snowyFlatties'
 ];
 
 function slideshow() {
