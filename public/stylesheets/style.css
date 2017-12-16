@@ -287,6 +287,21 @@ button:focus, button.active:focus {
   background: rgba(255, 0, 0, 0.5);
 }
 
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left;
+}
+
+
 /* End of Intro */
 
 /* Products Page */
@@ -640,5 +655,12 @@ textarea {
   }
   .blog-row {
     width: 80%;
+  }
+  .story {
+    display: block;
+    width: 100%;
+  }
+  .story-p {
+    width: 100%;
   }
 }

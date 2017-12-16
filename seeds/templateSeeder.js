@@ -12,12 +12,12 @@ var templates = [
     features: ['Responsive Design','1 html templates','1 CSS template', '1 Javascript File']
   }),
   new Template({
-    imagePath: '/images/templateTwo/firstTemplate.jpg',
+    imagePath: '/images/templateTwo/LandingScreenshot.png',
     name: 'Personal Landing Page',
     features: ['Responsive Design','1 html page', '1 css template', '1 Javascript files']
   }),
   new Template({
-    imagePath: '/images/templateThree/firstTemplate.jpg',
+    imagePath: '/images/templateThree/personalShopScreenshot.png',
     name: 'Shopping Cart Website',
     features: ['Responsive Design','Admin Panel','Approximately 10 html pages', 'User Authentication', 'Email API', 'E-Commerce']
   })
