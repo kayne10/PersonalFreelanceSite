@@ -3,7 +3,7 @@
 <section class="intro">
 
   <header class="products-header">
-    <h1>Web Development Templates & Freelance</h1>
+    <h1>Web Development Freelance & Data Science</h1>
 
     <a class="discover" href="#packages">
       <i class="fa fa-angle-double-down"></i>
@@ -30,7 +30,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-center">
-            <li><a href="/developer">Web Development</a></li>
+            <li><a href="/developer">Web Dev & DS</a></li>
             <li><a href="/gallery">Gallery</a></li>
             <li><a href="/explore">Blog</a></li>
             <li><a href="/about">About</a></li>
@@ -43,18 +43,6 @@
             <!-- <span class="badge">{{ session.cart.totalQty }}</span> -->
             </a>
           </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              {{# if login }}
-                <li><a href="/users/profile">User Management</a></li>
-                <li><a href="/users/logout">Log out</a></li>
-              {{ else }}
-                <li><a href="/users/signup">Sign Up</a></li>
-                <li><a href="/users/signin">Log in</a></li>
-              {{/if}}
-            </ul>
-          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -62,7 +50,7 @@
 
     <h1>Contact Me With A Website Idea</h1>
     <h3>Pick the Freelance package that best suits your need </h3>
-    <center><a href="#products"><button type="button" class="custom-btn">Skip to my Projects and Templates</button></a></center>
+    <center><a href="#ds-projects"><button type="button" class="custom-btn">Skip to Data Science</button><a href="/contact"><button type="button" class="custom-btn">Contact Me</button></a></a></center>
     <div class="package-wrapper">
       <div class="col-md-4">
         <h3>Package A</h3>
@@ -115,36 +103,46 @@
         </div>
       </div>
     </div>
-    <center><a href="/contact"><button type="button" class="custom-btn">Contact Me</button></a></center>
 </section>
 
-<section class="products" id="products">
+<section class="products" id="ds-projects">
   <div class="products-templates">
-    <h1>Browse Through My Static Website Templates</h1>
-    <p style="color:gold;">Warning: Styles are not up to date.</p>
-    <div class="product-wrapper">
-        {{# each templates}}
-          {{# each this }}
-          <div class="col-sm-6 col-md-6">
-            <div class="thumbnail">
-              <img src="{{ this.imagePath }}" class="img-responsive" alt="...">
-              <div class="caption">
-                <h3>{{ this.name }}</h3>
-                <h5>Features</h5>
-                <ul>
-                  {{# each features}}
-                    <li>{{ this }}</li>
-                  {{/each}}
-                </ul>
-                <!-- <h3>${{ this.price }}</h3> -->
-
-                <center><a href="/developer/demo/{{this._id}}"><button type="button" class="custom-btn">Demo</button></a></center>
-                <!-- <a href="/add-to-cart/{{this._id}}"><button type="button" class="btn btn-default add">Add to Cart</button></a> -->
-              </div>
+    <h1>Browse Through Data Science Blog</h1>
+    <div class="ds-wrapper">
+        <!-- Data Science Projects -->
+        <div class="ds-heading">
+          <h1>Projects</h1>
+          <a href="https://kayne10.github.io/data-science-blog/archive.html"><button type="button" class="custom-btn">Project Archive</button></a>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-9">
+            <h2>Data Analytics and Behind-the-scenes of Spotify</h2>
+            <h4>Spotify is a great digital music service and I recommend this media application as your primary choice for listening to music.
+            In this project, I look at the data metrics that play a huge role in Spotify's machine learning program.  I hope you can see why Spotify
+          is a fantastic service that generates great music suggestions for all its users.</h4>
+          </div>
+          <div class="col-md-3">
+            <div class="well">
+              <span><a href="https://kayne10.github.io/data-science-blog/jnotebooks/SpotifyNotebook.html">Link <i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+              <h4>Topics: </h4><span>Python, Jupyter Notebook, Pandas, Data Visualization</span>
             </div>
           </div>
-          {{/each}}
-        {{/each}}
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <h2>Discoveries of Cryptocurrencies</h2>
+            <h4>In this project, I am motivated by exploring how Bitcoin correlates with both other cryptocurrencies and other physical currencies/stocks is important for investors and
+              general consumer interest.  By exploring how related Bitcoin is I can determine its quality as an independent investment or if it will
+              rise and fall with other cryptocurrency investments.</h4>
+          </div>
+          <div class="col-md-3">
+            <div class="well">
+              <span><a href="#">Link <i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+              <h4>Topics: </h4><span>Python, Jupyter Notebook, Pandas, Data Visualization</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 </section>

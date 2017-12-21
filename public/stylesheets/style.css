@@ -1,15 +1,15 @@
 body {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   font-family: 'Poiret One', cursive;
   letter-spacing: 2px;
   margin: 0 auto;
   z-index: 5;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   width: auto;
 }
 
 html {
-  background: url('/images/devEnv.jpg') no-repeat center center fixed;
+  background: url('/images/sacredGeo.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,6 +25,13 @@ footer {
 }
 footer p {
   text-align: center;
+}
+
+hr {
+  clear:both;
+  display:block;
+  background-color:white;
+  height: 1px;
 }
 
 /* Headers */
@@ -376,6 +383,21 @@ button:focus, button.active:focus {
 .products .products-templates .product-wrapper .thumbnail .caption {
   color: white;
 }
+.ds-heading {
+  display: flex;
+}
+.ds-heading a {
+  padding-left: 1.5em;
+}
+.ds-wrapper {
+  padding: 1em 0.5em;
+}
+.ds-wrapper h1 {
+  text-align: left;
+}
+.ds-wrapper h4 {
+  color: lightgrey;
+}
 
 /* About Me page */
 
@@ -450,7 +472,7 @@ button:focus, button.active:focus {
 .gallery {
   height: auto;
   width: 100%;
-  background: rgba(22, 54, 107, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   margin-top: -1.5em;
   color: white;
 }
@@ -578,6 +600,14 @@ button:focus, button.active:focus {
 textarea {
   color: black;
 }
+
+.well {
+  background: transparent;
+}
+.well h4 {
+  padding: 0;
+}
+
 
 /* User Profile Page */
 .welcome-container {
