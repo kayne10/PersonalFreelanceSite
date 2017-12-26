@@ -253,10 +253,10 @@
     line-height: 200px;
 }
 .cb-slideshow li:nth-child(1) span {
-    background-image: url('/images/boulderBackground.jpg')
+    background-image: url('/images/CrystalVectors.jpg')
 }
 .cb-slideshow li:nth-child(2) span {
-    background-image: url('/images/explore.jpg');
+    background-image: url('/images/boulderBackground.jpg');
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -264,7 +264,7 @@
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url('/images/grossRainbow.jpg');
+    background-image: url('/images/explore.jpg');
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -272,7 +272,7 @@
     animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span {
-    background-image: url('/images/snowyFlatties.jpg');
+    background-image: url('/images/grossRainbow.jpg');
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -280,20 +280,12 @@
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../images/5.jpg);
+    background-image: url('/images/snowyFlatties.jpg');
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
     -ms-animation-delay: 24s;
     animation-delay: 24s;
-}
-.cb-slideshow li:nth-child(6) span {
-    background-image: url(../images/6.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
 }
 .cb-slideshow li:nth-child(2) div {
     -webkit-animation-delay: 6s;
@@ -484,6 +476,10 @@
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			background-image: url('../images/logo.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 		}
 
 			#header .logo .icon:before {

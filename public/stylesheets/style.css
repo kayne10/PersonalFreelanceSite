@@ -4,12 +4,12 @@ body {
   letter-spacing: 2px;
   margin: 0 auto;
   z-index: 5;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   width: auto;
 }
 
 html {
-  background: url('/images/sacredGeo.jpg') no-repeat center center fixed;
+  background: url('/images/CrystalVectors.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -363,9 +363,11 @@ button:focus, button.active:focus {
   margin: 0 auto;
   display: flex;
   padding-bottom: 6em;
+  padding-top: 2em;
 }
 .package-wrapper h3 {
   display: block;
+  text-decoration:underline;
 }
 .package-thumbnail {
   width: 33%;
@@ -692,5 +694,8 @@ textarea {
   }
   .story-p {
     width: 100%;
+  }
+  .contact-wrapper {
+    width: 90%;
   }
 }
