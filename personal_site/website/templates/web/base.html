@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Developer and Photographer">
+    <meta name="author" content="Troy Kayne">
+    <title>Troy Kayne Developer | Photographer | Explorer - {{title}}</title>
+    {% load staticfiles %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'web/img/favicon.ico'%}"/>
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="{% static 'web/style.css' %}" /> -->
+    <link rel="stylesheet" href="{% static 'web/css/intro.css' %}">
+
+    <!-- jQuery is required for Bootsrtap JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- Share this scripts -->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" id="st_insights_js" src="http://w.sharethis.com/button/buttons.js?publisher=37361ad7-20a5-4bd8-8f47-e2f48ef59fd4"></script>
+    <script type="text/javascript">stLight.options({publisher: "37361ad7-20a5-4bd8-8f47-e2f48ef59fd4", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  </head>
+  <body>
+     <!-- Navbar -->
+
+
+    {% block body %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy;2017 troykaynedesignandphoto.com.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'web/main.js' %}"></script>
+    <!-- <script type="text/javascript" src="/javascripts/carousel.js"></script> -->
+  </body>
+</html>
