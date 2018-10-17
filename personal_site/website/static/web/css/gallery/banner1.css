@@ -5,8 +5,8 @@
 	outline:none;
 }
 
-a{ 
-	text-decoration: none; 
+a{
+	text-decoration: none;
 }
 
 ul{
@@ -22,34 +22,34 @@ body {
 /* component holder */
 #componentWrapper{
 	position:absolute;
-	top:50%;	
+	top:50%;
 	left:50%;
 	width:640px;
 	height:360px;
 	margin-left:-320px;
 	margin-top:-180px;
-	
+
 	border: 5px solid #ccc;
-	
+
 	-moz-box-shadow: 5px 5px 5px #222;
 	-webkit-box-shadow: 5px 5px 5px #222;
 	box-shadow: 5px 5px 5px #222;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#222222')";
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#222222');
-	
+
 	background:#111;
 }
 
 #componentWrapper .componentHolder{
 	position:absolute;
-	top:0px;	
+	top:0px;
 	left:0px;
 	width:100%;
 	height:100%;
 	overflow:hidden;
 }
 
-#componentWrapper .mediaHolder1, 
+#componentWrapper .mediaHolder1,
 #componentWrapper .mediaHolder2{
 	position:absolute;
 	display:none;
@@ -95,9 +95,9 @@ body {
 	margin-right:5px;
 }
 
-#componentWrapper .playlistItem:last-child {  
+#componentWrapper .playlistItem:last-child {
    margin-right:0px;
-}  
+}
 
 #componentWrapper .playlistItem2{
 	position:relative;
@@ -110,9 +110,9 @@ body {
 	margin-right:5px;
 }
 
-#componentWrapper .playlistItem2:last-child {  
+#componentWrapper .playlistItem2:last-child {
    margin-right:0px;
-}   
+}
 
 #componentWrapper .playlistItem3{
 	position:relative;
@@ -125,9 +125,9 @@ body {
 	margin-right:5px;
 }
 
-#componentWrapper .playlistItem3:last-child {  
+#componentWrapper .playlistItem3:last-child {
    margin-right:0px;
-}  
+}
 
 #componentWrapper .playlistItem4{
 	position:relative;
@@ -140,9 +140,9 @@ body {
 	margin-right:5px;
 }
 
-#componentWrapper .playlistItem4:last-child {  
+#componentWrapper .playlistItem4:last-child {
    margin-right:0px;
-}   
+}
 
 
 #componentWrapper .playlistItem5{
@@ -156,9 +156,9 @@ body {
 	margin-right:5px;
 }
 
-#componentWrapper .playlistItem5:last-child {  
+#componentWrapper .playlistItem5:last-child {
    margin-right:0px;
-}   
+}
 
 
 #componentWrapper .playlistItem6{
@@ -172,10 +172,10 @@ body {
 	margin-right:5px;
 }
 
-#componentWrapper .playlistItem6:last-child {  
+#componentWrapper .playlistItem6:last-child {
    margin-right:0px;
-}   
- 
+}
+
 
 
 
@@ -204,7 +204,7 @@ body {
 	display:none;
 }
 
-.slideshow_controls .controls_next, 
+.slideshow_controls .controls_next,
 .slideshow_controls .controls_toggle{
 	position:relative;
 	width:30px;
@@ -266,15 +266,15 @@ body {
 	position:absolute;
 	top:60px;
 	right:20px;
-	
+
 	color:#e5e5e5;
 	padding: 10px 20px 15px 20px;
-	
+
 	font-family:Arial, Helvetica, sans-serif;
-	
+
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.6);
-				
+
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
@@ -421,7 +421,7 @@ body {
 	top:50%;
 	left:50%;
 	margin:-20px 0px 0px -20px;/* align with video play btn! */
-	background:#000 url('../media/data/gallery_icons/loader.gif') no-repeat center center;
+	background:#000 url('../../img/media/data/gallery_icons/loader.gif') no-repeat center center;
 	width:50px;
 	height:50px;
 	z-index:999;
@@ -436,11 +436,11 @@ body {
 
 
 
-#componentWrapper .slide_timer { 
+#componentWrapper .slide_timer {
 	position:absolute;
 	top:0px;
 	left:0px;
-	width:0px; 
+	width:0px;
 	height:4px;
 	background:#fff;
 }
@@ -454,182 +454,182 @@ body {
 	-	CAPTIONS	-
 **************************/
 #componentWrapper .caption_envato_logo	{
-						position: absolute; 
+						position: absolute;
 						width:180px;
-						height:50px;	
-						
+						height:50px;
+
 						moz-box-shadow: 2px 2px 5px #222;
 						-webkit-box-shadow: 2px 2px 5px #222;
 						box-shadow: 0px 3px 4px #333;
 						-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-						filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');									
+						filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 					}
-					
+
 #componentWrapper .caption_big_white	{
-						position: absolute; 
-						color: #fff; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 26px; 
-						line-height: 36px; 
-						font-family: Arial; 
-						padding: 5px; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						background-color:#000;	
-						letter-spacing: -1.5px;										
+						position: absolute;
+						color: #fff;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 26px;
+						line-height: 36px;
+						font-family: Arial;
+						padding: 5px;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						background-color:#000;
+						letter-spacing: -1.5px;
 					}
 
 #componentWrapper .caption_big_orange	{
-						position: absolute; 
-						color: #ff7302; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 30px; 
-						line-height: 36px; 
-						font-family: Arial; 
-						padding: 0px 8px 0px 8px; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						background-color:#fff;	
-						letter-spacing: -1.5px;															
-					}	
-					
+						position: absolute;
+						color: #ff7302;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 30px;
+						line-height: 36px;
+						font-family: Arial;
+						padding: 0px 8px 0px 8px;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						background-color:#fff;
+						letter-spacing: -1.5px;
+					}
+
 #componentWrapper .caption_big_black	{
-						position: absolute; 
-						color: #000; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 36px; 
-						line-height: 36px; 
-						font-family: Arial; 
-						padding: 0px 4px; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						background-color:#fff;	
-						letter-spacing: -1.5px;															
-					}		
+						position: absolute;
+						color: #000;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 36px;
+						line-height: 36px;
+						font-family: Arial;
+						padding: 0px 4px;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						background-color:#fff;
+						letter-spacing: -1.5px;
+					}
 
 #componentWrapper .caption_medium_grey	{
-						position: absolute; 
-						color: #fff; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 20px; 
-						line-height: 20px; 
-						font-family: Arial; 
-						padding: 2px 4px; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						background-color:#888;		
-						white-space:nowrap;	
-						text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);	
-						text-decoration:none;	
-					}	
-					
+						position: absolute;
+						color: #fff;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 20px;
+						font-family: Arial;
+						padding: 2px 4px;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						background-color:#888;
+						white-space:nowrap;
+						text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+						text-decoration:none;
+					}
+
 #componentWrapper .caption_small_text	{
-						position: absolute; 
-						color: #fff; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 24px; 
-						line-height: 20px; 
-						font-family: Arial; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
+						position: absolute;
+						color: #fff;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 24px;
+						line-height: 20px;
+						font-family: Arial;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
 						padding: 0px 8px 0px 8px;
-						white-space:nowrap;	
+						white-space:nowrap;
 						text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-						background-color:#C36;		
+						background-color:#C36;
 					}
-					
+
 #componentWrapper .caption_medium_text	{
-						position: absolute; 
-						color: #fff; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 20px; 
-						line-height: 20px; 
-						font-family: Arial; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						white-space:nowrap;	
-						background-color:#39C;	
-						text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);		
+						position: absolute;
+						color: #fff;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 20px;
+						font-family: Arial;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						white-space:nowrap;
+						background-color:#39C;
+						text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 					}
-					
+
 #componentWrapper .caption_large_green	{
-						position: absolute; 
-						color: #fff; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 28px; 
-						line-height: 40px; 
-						font-family: Arial; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						white-space:nowrap;	
+						position: absolute;
+						color: #fff;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 28px;
+						line-height: 40px;
+						font-family: Arial;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						white-space:nowrap;
 						text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-						background-color:#6C3;			
-					}	
-					
+						background-color:#6C3;
+					}
+
 #componentWrapper .caption_big_blue	{
-						position: absolute; 
-						color: #fff; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 36px; 
-						line-height: 60px; 
-						font-family: Arial; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						white-space:nowrap;	
+						position: absolute;
+						color: #fff;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 36px;
+						line-height: 60px;
+						font-family: Arial;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						white-space:nowrap;
 						text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-						letter-spacing: -2px;	
-						background-color:#F66;		
-					}	
-					
-					
+						letter-spacing: -2px;
+						background-color:#F66;
+					}
+
+
 #componentWrapper .caption_very_big_white	{
-						position: absolute; 
-						color: #fff; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 60px; 
-						line-height: 60px; 
-						font-family: Arial; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						white-space:nowrap;	
-						padding: 0px 4px; 
+						position: absolute;
+						color: #fff;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 60px;
+						line-height: 60px;
+						font-family: Arial;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						white-space:nowrap;
+						padding: 0px 4px;
 						padding-top: 1px;
-						background-color:#000;		
-					}	
-					
+						background-color:#000;
+					}
+
 #componentWrapper .caption_very_big_black	{
-						position: absolute; 
-						color: #000; 
-						text-shadow: none; 
-						font-weight: 700; 
-						font-size: 60px; 
-						line-height: 60px; 
-						font-family: Arial; 
-						margin: 0px; 
-						border-width: 0px; 
-						border-style: none; 
-						white-space:nowrap;	
-						padding: 0px 4px; 
+						position: absolute;
+						color: #000;
+						text-shadow: none;
+						font-weight: 700;
+						font-size: 60px;
+						line-height: 60px;
+						font-family: Arial;
+						margin: 0px;
+						border-width: 0px;
+						border-style: none;
+						white-space:nowrap;
+						padding: 0px 4px;
 						padding-top: 1px;
-						background-color:#fff;		
+						background-color:#fff;
 					}
 
 
@@ -642,7 +642,7 @@ body {
 
 
 
-/* public functions */	
+/* public functions */
 #publicFunctions{
 	position: absolute;
 	padding: 10px 25px 20px 20px;
@@ -654,13 +654,13 @@ body {
 	color:#fff;
 	list-style:circle;
 	z-index:9999;
-	
+
 	-moz-box-shadow: 2px 2px 5px #222;
 	-webkit-box-shadow: 2px 2px 5px #222;
 	box-shadow: 2px 2px 5px #222;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#222222')";
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#222222');
-	
+
 	display:none;
 }
 
@@ -671,5 +671,3 @@ body {
 #publicFunctions li a:hover, #publicFunctions li .current{
 	text-decoration: underline;
 }
-
-

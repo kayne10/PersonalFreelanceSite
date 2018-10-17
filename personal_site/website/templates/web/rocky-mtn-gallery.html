@@ -2,7 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Rocky Mountain Gallery</title>
-				{% load staticfiles %}
+				{% load static %}
 				<link rel="shortcut icon" type="image/png" href="{% static 'web/img/favicon.ico'%}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'web/css/gallery/flashblock.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'web/css/gallery/videoPlayer.css' %}" />
@@ -20,7 +20,6 @@
 
 
         <script type="text/javascript" src="{% static 'web/js/gallery/jquery.func.js' %}"></script>
-        <script type="text/javascript" src="{% static 'web/js/gallery/jquery.videoGallery.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'web/js/gallery/soundmanager2-nodebug-jsmin.js' %}" ></script>
         <script type="text/javascript" src="{% static 'web/js/gallery/jquery.apPlaylistManager.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'web/js/gallery/jquery.apTextScroller.min.js' %}"></script>
@@ -347,8 +346,8 @@
 
 
                      <!-- menu buttons -->
-                     <div class="prevMenuBtn"><img src="{% static 'web/img/media/data/gallery_icons/playlist_prev_h.png' %}" width='12' height='18' alt=''/></div>
-                     <div class="nextMenuBtn"><img src="{% static 'web/img/media/data/gallery_icons/playlist_next_h.png' %}" width='12' height='18' alt=''/></div>
+                     <div class="prevMenuBtn"><img src="{% static 'web/img/media/data/audio_icons/playlist_prev_h.png' %}" width='12' height='18' alt=''/></div>
+                     <div class="nextMenuBtn"><img src="{% static 'web/img/media/data/audio_icons/playlist_next_h.png' %}" width='12' height='18' alt=''/></div>
 
                      <!-- thumb buttons -->
                      <div class="prevThumbBtn"><img src="{% static 'web/img/media/data/gallery_icons/playlist_prev_h.png' %}" width='12' height='18' alt=''/></div>
@@ -372,7 +371,7 @@
               <div class="slideshow_controls">
               	  <div class="controls_next"><img src="{% static 'web/img/media/data/gallery_icons/next.png' %}" width='30' height='30' alt='controls_next'/></div>
                   <div class="controls_toggle"><img src="{% static 'web/img/media/data/gallery_icons/play.png' %}" width='30' height='30' alt='controls_toggle'/></div>
-                  <div class="controls_prev"><img src="{% static 'web/img/media/data/gallery_icons/prev.png' %}" width='30' height='30' alt='controls_prev'/></div>
+                  <div class="controls_prev"><img src="/static/web/img/media/data/gallery_icons/prev.png" width='30' height='30' alt='controls_prev'/></div>
               </div>
 
               <!-- data controls - link/description -->
