@@ -1,0 +1,701 @@
+body {
+  /* max-width: 1280px; */
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.8);
+  width: auto;
+}
+
+html {
+  background: url('/images/CrystalVectors.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  height: 200px;
+  padding: 3em 0;
+}
+footer p {
+  text-align: center;
+}
+
+hr {
+  clear:both;
+  display:block;
+  background-color:white;
+  height: 1px;
+}
+
+/* Headers */
+
+header {
+  /*margin-top: -1.5em;*/
+  height: 100vh;
+  width: 100%;
+  z-index: 6;
+  font-family: 'Pathway Gothic One', sans-serif;
+  letter-spacing: 0.25em;
+}
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 250px;
+  font-size: 3em;
+  color: white;
+  z-index: 9;
+}
+.intro-header {
+  background: url('/images/headerBackground.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.products-header {
+  background: url('/images/mainBackground.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.about-header {
+  background: url('/images/devEnv.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.explore-header {
+  background: url('/images/explore.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.gallery-header {
+  background: url('/images/evanstonSunset.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+header img {
+  margin: 0 auto;
+  margin-left: -2em;
+}
+.text-header {
+  height: 150px;
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 250px;
+  color: white;
+  text-shadow: 0 0 15px yellow;
+}
+.text-header h2 {
+  font-size: 3em;
+}
+.discover {
+  position: absolute;
+  color: #ffffff;
+  bottom: 100px;
+  right: 0;
+  left: 0;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  z-index: 9;
+}
+/* End Headers */
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+/* Intro Section */
+
+.intro {
+  height: 100%;
+  width: 100%;
+  font-family: 'Pathway Gothic One', sans-serif;
+  letter-spacing: 0.25em;
+}
+.intro .welcome {
+  text-align: center;
+  color: white;
+  width: 80%;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 10em;
+}
+.intro-nav {
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  background: transparent;
+  z-index: 9;
+}
+.intro-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+.intro-nav ul li a:hover {
+  text-decoration: none;
+  font-size: 3em;
+  font-style: underline;
+}
+
+.navbar-default {
+  margin: 0 auto;
+  width: 100%;
+  background-color: black;
+  border: none;
+  border-radius: 0px;
+}
+
+.navbar-nav li a {
+  font-size: 1em;
+}
+.navbar-collapse.collapse {
+  background-color: black;
+}
+.navbar-collapse.collapse.in {
+  background-color: black;
+}
+
+#carousel {
+  -moz-box-shadow:    inset 0 0 2em #000000;
+   -webkit-box-shadow: inset 0 0 2em #000000;
+   box-shadow:         inset 0 0 2em #000000;
+}
+
+
+.about {
+  height: auto;
+  width: 100%;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: -1.5em;
+  color: white;
+}
+.about h1 {
+  padding-top: 1.75em;
+  font-size: 4em;
+  text-align: center;
+}
+.about-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.about-thumbnail {
+  padding: 3em 2em;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  width: 50%;
+}
+
+.explore {
+  height: 500px;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: -1.5em;
+  color: white;
+}
+
+.explore h1 {
+  padding-top: 2em;
+  text-align: center;
+}
+
+.explore-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.explore-thumbnail {
+  width: 33%;
+  height: 60px;
+  margin: 2px 0px;
+}
+
+.sample {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: -1.5em;
+  color: white;
+}
+
+.carousel {
+    height: 90vh;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('../images/pumpkin-patch.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 45%;
+    margin: .5em;
+}
+
+button:focus, button.active:focus {
+    outline: none;
+}
+
+.custom-btn {
+  border-radius: 10px;
+  color: white;
+  background: rgb(22, 54, 107);
+  border: 2px solid white;
+  padding: 0.5em 0.5em;
+}
+.custom-btn:hover, .custom-btn:active {
+  color: white;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left;
+}
+
+
+/* End of Intro */
+
+/* Products Page */
+
+.products {
+  width: 100%;
+  height: auto;
+  background: rgba(22, 54, 107, 0.3);
+  color: white;
+}
+.products h1 {
+  text-align: center;
+}
+.products-templates {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+.product-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  padding: 3em 0em;
+}
+.product-thumbnail {
+  width: 50%;
+  text-align: center;
+  padding: 2em 2em;
+  border: 2px solid black;
+  margin: 0px 3px;
+}
+.product-thumbnail ul, p {
+  text-align: left;
+}
+
+.packages {
+  width: 100%;
+  height: auto;
+  background: rgba(22, 54, 107, 0.3);
+  color: white;
+}
+.packages h1, .packages h3 {
+  text-align: center;
+}
+.packages h1 {
+  padding-top: 2em;
+}
+.package-wrapper {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 6em;
+  padding-top: 2em;
+}
+.package-wrapper h3 {
+  display: block;
+  text-decoration:underline;
+}
+.package-thumbnail {
+  width: 33%;
+  height: auto;
+  margin: 2em 2px;
+  padding: 2em 2em;
+  border: solid 2px black;
+}
+.add {
+  cursor: not-allowed;
+}
+.products .products-templates .product-wrapper .thumbnail {
+  background: transparent;
+}
+.products .products-templates .product-wrapper .thumbnail .caption {
+  color: white;
+}
+.ds-heading {
+  display: flex;
+}
+.ds-heading a {
+  padding-left: 1.5em;
+}
+.ds-wrapper {
+  padding: 1em 0.5em;
+}
+.ds-wrapper h1 {
+  text-align: left;
+}
+.ds-wrapper h4 {
+  color: lightgrey;
+}
+
+/* About Me page */
+
+.About {
+  width: 100%;
+  height: auto;
+}
+.About-wrapper {
+  width: 100%;
+  background: rgba(22, 54, 107, 0.3);
+}
+.story {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.story-thumbnail {
+  width: 40%;
+  height: auto;
+  z-index: 9;
+}
+.story-thumbnail img {
+  border-radius: 100%;
+  padding: 3em 6em;
+  z-index: 9;
+}
+.story-p {
+  width: 60%;
+  padding: 4em 4em;
+  z-index: 9;
+  background: rgba(255, 255, 255, 0.5);
+}
+.story-p p {
+  font-weight: bold;
+}
+.skills-wrapper {
+  width: 100%;
+  height: auto;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+.skill-container {
+  width: 70%;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  background: transparent;
+}
+.skill-container ul {
+  list-style: none;
+}
+.skill-container > li {
+  padding: 2em 1em;
+}
+.social {
+  width: 100%;
+  height: auto;
+}
+.links {
+  width: 66%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3em;
+}
+.freelance-site {
+  font-size: 2em;
+
+}
+
+/* Gallery Page */
+
+.gallery {
+  height: auto;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: -1.5em;
+  color: white;
+}
+.rocky-mtn {
+  width: 100%;
+  height: 500px;
+  background: url('/images/boulderBackground.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.israel {
+  width: 100%;
+  height: 500px;
+  background: url('/images/israelBackground.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.gallery-description {
+  width: 100%;
+  text-align: center;
+  padding: 4em 4em;
+  height: auto;
+  background: rgba(22, 54, 107, 0.3);
+  margin-top: 2.5em;
+  color: white;
+}
+.gallery-description p {
+  margin: 0 auto;
+  padding: 2em 0;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: normal;
+  width: 80%;
+}
+.gallery-description a {
+  margin: 0 auto;
+}
+.gallery h1 {
+  text-align: center;
+  padding: 4em 4em;
+}
+.gallery-heading {
+  border: 4px solid white;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 0 15px black;
+}
+.heading-title {
+  box-shadow: 0 0 15px;
+}
+
+
+/* Explore Blog Page */
+
+.explore-page {
+  height: auto;
+}
+.blog-wrapper {
+  width: 100%;
+  height: auto;
+}
+.blog-nav {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 2em 0px;
+}
+.blog-row {
+  width: 90%;
+  height: 33%;
+  margin: 0 auto;
+}
+.post-thumbnail {
+  padding: 2em 4em;
+  background: rgba(0,0,0,0.5);
+  border: 3px solid darkblue;
+  /*box-shadow: 0px 0px 8px black;*/
+}
+.post-thumbnail:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+.post-view {
+  margin: 0 auto;
+  width: 85%;
+  background-color: rgba(22, 54, 107, 0.3);
+  color: white;
+  height: auto;
+  padding: 3em 2em;
+  text-align: center;
+}
+.post-view p {
+  text-align: left;
+  letter-spacing: 2px;
+  padding: 1em 2em;
+}
+.music-container {
+  height: auto;
+}
+.hike-container {
+  height: auto;
+}
+/* Contact Page */
+.contact-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  background: rgba(22, 54, 107, 0.3);
+  color: white;
+  padding: 3em 3em;
+}
+.message {
+  word-break: break-word;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+}
+textarea {
+  color: black;
+}
+
+.well {
+  background: transparent;
+}
+.well h4 {
+  padding: 0;
+}
+
+
+/* User Profile Page */
+.welcome-container {
+  width: 70%;
+  height: 200px;
+  font-size: 4em;
+  margin: 0 auto;
+  padding: 2em 3em;
+  text-align: center;
+}
+.welcome-container h1 {
+  color: white;
+}
+
+/* Shopping Cart Page */
+.shopping-cart {
+  padding-top: 4em;
+}
+.shopping-tease {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3em;
+  box-shadow: 0 0 15px;
+  padding: 2em 3em;
+  color: white;
+}
+.shopping-tease h1 {
+  padding: 0em 1em;
+}
+.responsive {
+  max-width: 100%;
+}
+
+/* Authentication Pages  */
+.auth-wrapper {
+  color: white;
+  box-shadow: 0 0 15px;
+  padding: 3em 1em;
+  margin-top: 4em;
+  padding-bottom: 4em;
+  margin-bottom: 4em;
+}
+
+/* responsive features */
+@media screen and (max-width: 767px) {
+  .intro-nav ul {
+    display: block;
+  }
+  .intro-nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+    z-index: 8;
+  }
+  .intro-nav ul li a:hover {
+    color: grey;
+  }
+  .about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .about-thumbnail {
+    width: 90%;
+  }
+  .sample {
+    display: none;
+  }
+  .package-wrapper {
+    display: block;
+    width: 95%;
+  }
+  .product-wrapper {
+    display: block;
+    width: 95%;
+  }
+  .blog-row {
+    width: 80%;
+  }
+  .story {
+    display: block;
+    width: 100%;
+  }
+  .story-p {
+    width: 100%;
+  }
+  .contact-wrapper {
+    width: 90%;
+  }
+}

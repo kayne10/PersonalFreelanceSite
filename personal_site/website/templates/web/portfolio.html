@@ -1,0 +1,221 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block body %}
+<link rel='stylesheet' href='{% static 'web/css/style.css' %}' />
+
+<section class="intro">
+
+  <header class="products-header">
+    <h1>My Portfolio</h1>
+
+    <a class="discover" href="#ds-projects">
+      <i class="fa fa-angle-double-down"></i>
+    </a>
+
+  </header>
+
+</section>
+
+<section class="packages" id="ds-projects">
+  <nav class="navbar navbar-default" id="cd-main-nav">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="{% static 'web/img/logo.png' %}" width="50" alt=""></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-center">
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <!-- <li><a href="/contact">Contact</a></li> -->
+          </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="products-templates">
+    <h1>Data Science</h1>
+    <div class="ds-wrapper">
+        <!-- Data Science Projects -->
+        <div class="ds-heading">
+          <h1>Projects</h1>
+        </div>
+        <hr>
+        {% if all_ds_projects %}
+        {% for project in all_ds_projects %}
+          <div class="row">
+            <div class="col-md-9">
+              <h2>{{ project.title }}</h2>
+              <h4>{{ project.content }}</h4>
+            </div>
+            <div class="col-md-3">
+              <div class="well">
+                {% if project.github_link %}
+                <span>
+                  <a href="{{project.github_link}}" target="_blank">Link <i class="fa fa-github-square" aria-hidden="true"></i></a>
+                </span>
+                {% else %}
+                <span>
+                  No Link :(
+                </span>
+                {% endif %}
+                <h4>Topics: </h4>
+                <span>
+                  <ul>
+                    {% for topic in project.topics %}
+                    <a href="{% url 'website:search' topic %}"><li class="badge badge-default">{{topic}}</li></a>
+                    {% endfor %}
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        {% else %}
+          <h3>No projects listed yet...</h3>
+        {% endif %}
+        <!-- <div class="row">
+          <div class="col-md-9">
+            <h2>Data Analytics and Behind-the-scenes of Spotify</h2>
+            <h4>Spotify is a great digital music service and I recommend this media application as your primary choice for listening to music.
+            In this project, I look at the data metrics that play a huge role in Spotify's machine learning program.  I hope you can see why Spotify
+          is a fantastic service that generates great music suggestions for all its users.</h4>
+          </div>
+          <div class="col-md-3">
+            <div class="well">
+              <span><a href="https://kayne10.github.io/data-science-blog/jnotebooks/SpotifyNotebook.html">Link <i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+              <h4>Topics: </h4><span>Python, Jupyter Notebook, Pandas, Data Visualization</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <h2>Discoveries of Cryptocurrencies</h2>
+            <h4>In this project, I am motivated by exploring how Bitcoin correlates with both other cryptocurrencies and other physical currencies/stocks is important for investors and
+              general consumer interest.  By exploring how related Bitcoin is I can determine its quality as an independent investment or if it will
+              rise and fall with other cryptocurrency investments.</h4>
+          </div>
+          <div class="col-md-3">
+            <div class="well">
+              <span><a href="https://kayne10.github.io/data-science-blog/jnotebooks/CC_Analytics.html">Link <i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+              <h4>Topics: </h4><span>Python, Jupyter Notebook, Pandas, Data Visualization</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+</section>
+
+<section class="products" id="fs-projects">
+  <div class="products-templates">
+    <h1>Full Stack Web Development</h1>
+    <div class="ds-wrapper">
+        <!-- Data Science Projects -->
+        <div class="ds-heading">
+          <h1>Projects</h1>
+        </div>
+        <hr>
+        {% if all_fs_projects %}
+          {% for project in all_fs_projects %}
+            <div class="row">
+              <div class="col-md-9">
+                <h2>{{ project.title }}</h2>
+                <h4>{{ project.content }}</h4>
+              </div>
+              <div class="col-md-3">
+                <div class="well">
+                  {% if project.github_link %}
+                  <span>
+                    <a href="{{project.github_link}}" target="_blank">Link <i class="fa fa-github-square" aria-hidden="true"></i></a>
+                  </span>
+                  {% else %}
+                  <span>
+                    No Link :(
+                  </span>
+                  {% endif %}
+                  <h4>Topics: </h4>
+                  <span>
+                    <ul>
+                      {% for topic in project.topics %}
+                        <a href="{% url 'website:search' topic %}"><li class="badge badge-default">{{topic}}</li></a>
+                      {% endfor %}
+                    </ul>
+                  </span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <h3>No projects listed yet...</h3>
+        {% endif %}
+      </div>
+    </div>
+</section>
+
+<!-- <h1>Contact Me With A Website Idea</h1>
+<h3>Pick the Freelance package that best suits your need </h3>
+<center><a href="#ds-projects"><button type="button" class="custom-btn">Skip to Data Science</button><a href="/contact"><button type="button" class="custom-btn">Contact Me</button></a></a></center>
+<div class="package-wrapper">
+  <div class="col-md-4">
+    <h3 class="package-header">Front-End Development</h3>
+    <div class="caption">
+      <p>
+        Charge Rate: $20/hr
+      </p>
+      <ul>
+        <li>Static Website</li>
+        <li>Personal Landing Page</li>
+        <li>Personal Portfolio</li>
+        <li>Responsive</li>
+        <li>HTML, CSS, and Javascript</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h3 class="package-header">API Development</h3>
+    <div class="caption">
+      <p>
+        Charge Rate: $25/hr
+      </p>
+      <ul>
+        <li>Express, Django, or Rails</li>
+        <li>User Authentication</li>
+        <li>RESTful API</li>
+        <li>SQL/NoSQL</li>
+        <li>AWS, Digital Ocean, or Heroku</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h3 class="package-header">Full Stack Development</h3>
+    <div class="caption">
+      <p>
+        Charge Rate: $30/hr
+      </p>
+      <ul>
+        <li>Responsive</li>
+        <li>User Authentication</li>
+        <li>Admin Panel</li>
+        <li>Merchandise & E-commerce</li>
+        <li>Express, Django, or Rails</li>
+        <li>RESTful API</li>
+        <li>SQL/NoSQL</li>
+        <li>AWS, Digital Ocean, or Heroku</li>
+        <li>Scalable Services with Docker</li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+{% endblock %}

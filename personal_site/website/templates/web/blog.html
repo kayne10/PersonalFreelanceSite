@@ -1,0 +1,87 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block body %}
+<link rel='stylesheet' href='{% static 'web/css/style.css' %}' />
+
+<section class="intro">
+
+  <header class="explore-header">
+    <h1>Explore Exotic Places</h1>
+
+    <a class="discover" href="#explore">
+      <i class="fa fa-angle-double-down"></i>
+    </a>
+
+  </header>
+
+</section>
+
+<section class="explore-page" id="explore">
+  <nav class="navbar navbar-default" id="cd-main-nav">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="{% static 'web/img/logo.png' %}" width="50" alt=""></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-center">
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+</section>
+
+<div class="blog-wrapper">
+  <br>
+  <div class="row blog-row">
+    <div class="hike-container">
+      {% if all_posts %}
+        {% for post in all_posts %}
+          <a href="{% url 'website:detail' post.slug %}">
+            <div class="col-md-4 post-thumbnail">
+              {% if post.image %}
+                <img src="{{ post.image.url }}" alt="" class="img-responsive">
+              {% else %}
+                <img src="/static/web/img/Logo.png" class="img-responsive" alt="">
+              {% endif %}
+              <div class="caption">
+                <h3>{{ post.title|title }}</h3>
+                <ul>
+                  {% for topic in post.category %}
+                    <li class="badge badge-default">{{ topic }}</li>
+                  {% endfor %}
+                </ul>
+                <p>
+                  Click for more
+                </p>
+                <!-- sharing options -->
+                <div class="share">
+                  <span class='st_facebook_large' displayText='Facebook'></span>
+                  <span class='st_twitter_large' displayText='Tweet'></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      {% else %}
+        <h3>No Posts at the moment...</h3>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

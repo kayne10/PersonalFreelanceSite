@@ -1,6 +1,8 @@
 from django.contrib import admin
-from .models import Post
+from markdownx.admin import MarkdownxModelAdmin
+from .models import Post, Project
 
 # Register your models here.
-admin.site.register(Post)
-admin.site.site_header = 'Troy Kayne'
+admin.site.register(Post, MarkdownxModelAdmin)
+admin.site.register(Project)
+admin.site.site_header = "Troy Kayne's Personal Website"

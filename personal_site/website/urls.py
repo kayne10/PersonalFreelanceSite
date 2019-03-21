@@ -5,11 +5,10 @@ app_name = 'website'
 
 urlpatterns = [
     url(r'^$', views.index, name="index"),
-    url(r'^developer/$', views.developer, name="developer"),
+    url(r'^portfolio/$', views.portfolio, name="developer"),
     url(r'^about/$', views.about, name="about"),
     url(r'^gallery/$', views.gallery, name="gallery"),
-    url(r'^gallery/rocky-mtn/$', views.explore_rockies, name="explore_rockies"),
-    url(r'^gallery/israel/$', views.explore_israel, name="explore_israel"),
-    url(r'^explore/$', views.blog, name="blog"),
-    url(r'^explore/(?P<slug>[-\w]+)$', views.detail, name="detail"),
+    url(r'^blog/$', views.blog, name="blog"),
+    url(r'^blog/(?P<slug>[-\w]+)$', views.detail, name="detail"),
+    url(r'^search/(?P<topic>[\w\-]+)/$', views.search_blog_by_tag, name='search'),
 ]

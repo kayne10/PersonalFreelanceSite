@@ -21,7 +21,8 @@ from website import views
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^', include('website.urls')),
+    url(r'^markdownx/', include('markdownx.urls')),
+    url(r'^', include('website.urls',namespace='website')),
 ]
 
 if settings.DEBUG:

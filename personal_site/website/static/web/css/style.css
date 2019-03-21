@@ -318,6 +318,7 @@ button:focus, button.active:focus {
   height: auto;
   background: rgba(22, 54, 107, 0.3);
   color: white;
+  padding: 2em 0;
 }
 .products h1 {
   text-align: center;
@@ -464,6 +465,12 @@ button:focus, button.active:focus {
   justify-content: space-around;
   font-size: 3em;
 }
+.footer-links {
+  width: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
 .freelance-site {
   font-size: 2em;
 
@@ -584,6 +591,18 @@ button:focus, button.active:focus {
 .hike-container {
   height: auto;
 }
+
+/* Search Page  */
+.search-wrapper {
+  padding: 5em 0;
+}
+.thumbnail {
+  background: transparent;
+}
+.thumbnail .caption {
+  color: white;
+}
+
 /* Contact Page */
 .contact-wrapper {
   width: 50%;
