@@ -541,6 +541,10 @@ button:focus, button.active:focus {
 
 
 /* Explore Blog Page */
+.dp-highlighter {
+  text-align: left;
+}
+
 
 .explore-page {
   height: auto;

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="{% static 'web/style.css' %}" /> -->
     <link rel="stylesheet" href="/static/web/css/intro.css">
+    <link rel="stylesheet" href="/static/web/css/SyntaxHighlighter.css">
 
     <!-- jQuery is required for Bootsrtap JS -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -48,6 +49,11 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="/static/web/js/main.js"></script>
-    <!-- <script type="text/javascript" src="/javascripts/carousel.js"></script> -->
+    <script type="text/javascript" src="/static/web/js/shCore.js"></script>
+    <script type="text/javascript" src="/static/web/js/shBrushPython.js"></script>
+    <script class="javascript">
+      // dp.SyntaxHighlighter.ClipboardSwf = 'Scripts/clipboard.swf';
+      dp.SyntaxHighlighter.HighlightAll('code');
+      </script>
   </body>
 </html>
