@@ -1,4 +1,4 @@
-Django==2.1.2
+Django==2.2.10
 django-cleanup==2.1.0
 django-markdownx==2.0.28
 Markdown==3.0.1
