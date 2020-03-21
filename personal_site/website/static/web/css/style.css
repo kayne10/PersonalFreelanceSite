@@ -4,7 +4,7 @@ body {
   letter-spacing: 2px;
   margin: 0 auto;
   z-index: 5;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   width: auto;
 }
 
@@ -86,7 +86,7 @@ header h1 {
 
 }
 .gallery-header {
-  background: url('../img/evanstonSunset.jpg') no-repeat center center fixed;
+  background: url('../img/NavajoCarvedWomanBW.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
